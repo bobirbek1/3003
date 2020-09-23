@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">3003</string>
+    <string name="ads">ads</string>
+    <string name="active_schet">Активные счета</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
