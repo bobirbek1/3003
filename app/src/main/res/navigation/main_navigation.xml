@@ -15,6 +15,11 @@
         android:id="@+id/mainFragment"
         android:name="com.idrok.a3003.ui.main.MainFragment"
         android:label="MainFragment"
-        tools:layout="@layout/fragment_main"/>
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/listChildFragment"
+        android:name="com.idrok.a3003.ui.listChildFragment.ListChildFragment"
+        android:label="ListChildFragment"
+        tools:layout="@layout/fragment_viewpager_child" />
 
 </navigation>

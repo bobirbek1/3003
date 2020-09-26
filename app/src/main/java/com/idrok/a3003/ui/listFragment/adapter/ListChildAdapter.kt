@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.idrok.a3003.R
 import com.idrok.a3003.model.ITEM_TYPE
+import com.idrok.a3003.model.ListChilds
 import com.idrok.a3003.model.ListItems
 import com.idrok.a3003.model.TITLE_TYPE
 import kotlinx.android.synthetic.main.rv_list_items.view.*
@@ -18,17 +19,17 @@ class ListChildAdapter(
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder{
-        Log.d("ListChildAdapter","enter onCreateViewHolder")
-        when(viewType){
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+        Log.d("ListChildAdapter", "enter onCreateViewHolder")
+        when (viewType) {
             TITLE_TYPE -> {
                 val view = LayoutInflater.from(parent.context)
-                    .inflate(R.layout.rv_list_items_title,parent,false)
+                    .inflate(R.layout.rv_list_items_title, parent, false)
                 return VH1(view)
             }
             ITEM_TYPE -> {
                 val view = LayoutInflater.from(parent.context)
-                    .inflate(R.layout.rv_list_items,parent,false)
+                    .inflate(R.layout.rv_list_items, parent, false)
                 return VH2(view)
             }
         }
@@ -37,12 +38,20 @@ class ListChildAdapter(
         return VH2(view)
     }
 
+    // RecyclerView elemenlarini bin qilish
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        if (list[position].type == TITLE_TYPE){
+        if (list[position].type == TITLE_TYPE) {
             holder as VH1
             holder.onBind(list[position].body)
-        } else{
+        } else {
             holder as VH2
+            // ListChilds ni nullga tekshirish
+            if (list[position].listChilds != null) {
+                //RecyclerViewni elementi bosilganda callback bilan ListChildni ListFragmentChildga otish
+                holder.itemView.setOnClickListener {
+                    callback.invoke(list[position].listChilds!!.name[position])
+                }
+            }
             holder.onBind(list[position].body)
         }
 
@@ -60,6 +69,7 @@ class ListChildAdapter(
             itemView.tv_list_title.text = body
         }
     }
+
     class VH2(view: View) : RecyclerView.ViewHolder(view) {
         fun onBind(body: String) {
             itemView.tv_list_items.text = body
