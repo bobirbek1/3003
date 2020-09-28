@@ -6,6 +6,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.idrok.a3003.R
+import com.idrok.a3003.data.GetData
 import com.idrok.a3003.model.ITEM_TYPE
 import com.idrok.a3003.model.ListChilds
 import com.idrok.a3003.model.ListItems
@@ -17,15 +18,15 @@ const val DATA_NAME = "data_name"
 class ViewpagerChildFragment : Fragment(R.layout.fragment_viewpager_child) {
 
     private lateinit var rootView: View
+    private lateinit var getData: GetData
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         rootView = view
-        setRv()
+
     }
 
-    private fun setRv() {
-        val list = getList()
+    private fun setRv(list:ArrayList<ListItems>) {
         Log.d("ListFragmentChild", "list:$list")
 
         val adapter = ListChildAdapter(list) {name ->
@@ -36,22 +37,6 @@ class ViewpagerChildFragment : Fragment(R.layout.fragment_viewpager_child) {
         }
 
         rootView.rv_list.adapter = adapter
-    }
-
-    private fun getList(): ArrayList<ListItems> {
-        return arrayListOf(
-            ListItems("6000 schet k oplate postavshikam i podryadchikam", TITLE_TYPE),
-            ListItems(
-                "6010 scheta k oplate postavshikam i podryadchikam", ITEM_TYPE,
-                ListChilds(
-                    arrayListOf(
-                        "001 osnavnie sredstva, poluchenniye po operativnoy arende",
-                        "002 tovarno-materialniye sennosti, prinyatiye na otvetstvennoy xraneniye"
-                    )
-                )
-            ),
-            ListItems("6020 vekselya vidanniye", ITEM_TYPE)
-        )
     }
 
 }

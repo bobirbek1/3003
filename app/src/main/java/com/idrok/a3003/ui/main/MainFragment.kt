@@ -16,8 +16,8 @@ import com.idrok.a3003.ui.sliderAdapter.SliderAdapter
 import kotlinx.android.synthetic.main.fragment_main.view.*
 import kotlin.math.abs
 
-class MainFragment:Fragment(R.layout.fragment_main){
-    private lateinit var rootView:View
+class MainFragment : Fragment(R.layout.fragment_main) {
+    private lateinit var rootView: View
     private val sliderHandler = Handler()
     private lateinit var viewPager2: ViewPager2
 
@@ -26,31 +26,44 @@ class MainFragment:Fragment(R.layout.fragment_main){
         rootView = view
         setLayoutParams()
         setOnClicks()
-        val listImages = getImages()
-        setImageSlider(listImages)
+//        val listImages = getImages()
+//        setImageSlider(listImages)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        setImageSlider(getImages())
     }
 
     // Buttonlarga SetOnClickListener beramiz
     private fun setOnClicks() {
         //1-button
         rootView.cv_main_1.setOnClickListener {
-            findNavController().navigate(R.id.listFragment)
+            val bundle = Bundle()
+            bundle.putInt("type", 1)
+            findNavController().navigate(R.id.listFragment, bundle)
         }
         //2-button
         rootView.cv_main_2.setOnClickListener {
-
+            val bundle = Bundle()
+            bundle.putInt("type", 2)
+            findNavController().navigate(R.id.listFragment, bundle)
         }
         //3-button
         rootView.cv_main_3.setOnClickListener {
-
+            val bundle = Bundle()
+            bundle.putInt("type", 3)
+            findNavController().navigate(R.id.listFragment, bundle)
         }
         //4-button
         rootView.cv_main_4.setOnClickListener {
-
+            val bundle = Bundle()
+            bundle.putInt("type", 4)
+            findNavController().navigate(R.id.listFragment, bundle)
         }
         //5-button
         rootView.cv_main_5.setOnClickListener {
-
+            findNavController().navigate(R.id.pdfFragment)
         }
         //6-button
         rootView.cv_main_6.setOnClickListener {

@@ -21,5 +21,10 @@
         android:name="com.idrok.a3003.ui.listChildFragment.ListChildFragment"
         android:label="ListChildFragment"
         tools:layout="@layout/fragment_viewpager_child" />
+    <fragment
+        android:id="@+id/pdfFragment"
+        android:name="com.idrok.a3003.ui.pdfFragment.PdfFragment"
+        android:label="PdfFragment"
+        tools:layout="@layout/fragment_pdf_reader"/>
 
 </navigation>

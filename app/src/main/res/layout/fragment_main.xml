@@ -60,7 +60,7 @@
                     android:layout_gravity="bottom|center_horizontal"
                     android:gravity="center"
                     android:paddingBottom="4dp"
-                    android:text="@string/active_schet"
+                    android:text="@string/button1"
                     android:textColor="#fff"
                     android:textSize="16sp" />
 
@@ -94,7 +94,7 @@
                     android:layout_gravity="bottom|center_horizontal"
                     android:gravity="center"
                     android:paddingBottom="4dp"
-                    android:text="@string/active_schet"
+                    android:text="@string/button2"
                     android:textColor="#fff"
                     android:textSize="16sp" />
             </androidx.cardview.widget.CardView>
@@ -134,7 +134,7 @@
                     android:layout_gravity="bottom|center_horizontal"
                     android:gravity="center"
                     android:paddingBottom="4dp"
-                    android:text="@string/active_schet"
+                    android:text="@string/button3"
                     android:textColor="#fff"
                     android:textSize="16sp" />
 
@@ -160,7 +160,7 @@
                     android:layout_gravity="center_horizontal"
                     android:contentDescription="@string/ads"
                     android:paddingTop="8dp"
-                    android:src="@drawable/ic_android" />
+                    android:src="@drawable/ic_zabalansovie" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -168,7 +168,7 @@
                     android:layout_gravity="bottom|center_horizontal"
                     android:gravity="center"
                     android:paddingBottom="4dp"
-                    android:text="@string/active_schet"
+                    android:text="@string/button4"
                     android:textColor="#fff"
                     android:textSize="16sp" />
             </androidx.cardview.widget.CardView>
@@ -199,7 +199,7 @@
                     android:layout_gravity="center_horizontal"
                     android:contentDescription="@string/ads"
                     android:paddingTop="8dp"
-                    android:src="@drawable/ic_android" />
+                    android:src="@drawable/ic_zakoni" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -207,7 +207,7 @@
                     android:layout_gravity="bottom|center_horizontal"
                     android:gravity="center"
                     android:paddingBottom="4dp"
-                    android:text="@string/active_schet"
+                    android:text="@string/button5"
                     android:textColor="#fff"
                     android:textSize="16sp" />
 
@@ -233,7 +233,7 @@
                     android:layout_gravity="center_horizontal"
                     android:contentDescription="@string/ads"
                     android:paddingTop="8dp"
-                    android:src="@drawable/ic_android" />
+                    android:src="@drawable/ic_dopolnitelni" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -241,7 +241,7 @@
                     android:layout_gravity="bottom|center_horizontal"
                     android:gravity="center"
                     android:paddingBottom="4dp"
-                    android:text="@string/active_schet"
+                    android:text="@string/button6"
                     android:textColor="#fff"
                     android:textSize="16sp" />
             </androidx.cardview.widget.CardView>
