@@ -3,20 +3,26 @@ package com.idrok.a3003.ui.main
 import android.os.Bundle
 import android.os.Handler
 import android.util.DisplayMetrics
+import android.view.MenuItem
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.navigation.NavigationView
 import com.idrok.a3003.R
 import com.idrok.a3003.model.ImageSlider
 import com.idrok.a3003.ui.sliderAdapter.SliderAdapter
+import kotlinx.android.synthetic.main.content_main.view.*
 import kotlinx.android.synthetic.main.fragment_main.view.*
 import kotlin.math.abs
 
-class MainFragment : Fragment(R.layout.fragment_main) {
+class MainFragment : Fragment(R.layout.fragment_main),
+    NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
     private lateinit var rootView: View
     private val sliderHandler = Handler()
     private lateinit var viewPager2: ViewPager2
@@ -24,48 +30,58 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         rootView = view
+        (requireActivity() as AppCompatActivity).setSupportActionBar(rootView.home_toolbar)
         setLayoutParams()
         setOnClicks()
-//        val listImages = getImages()
-//        setImageSlider(listImages)
+        val listImages = getImages()
+        setImageSlider(listImages)
     }
 
-    override fun onStart() {
-        super.onStart()
-        setImageSlider(getImages())
-    }
 
     // Buttonlarga SetOnClickListener beramiz
     private fun setOnClicks() {
-        //1-button
+
+        rootView.home_toolbar.setNavigationOnClickListener {
+            rootView.drawer_layout.openDrawer(GravityCompat.START)
+            requireActivity()
+        }
+
+        rootView.nav_view.setNavigationItemSelectedListener(this)
+        rootView.btn_telegram.setOnClickListener(this)
+        rootView.btn_facebook.setOnClickListener(this)
+        rootView.btn_instagram.setOnClickListener(this)
+        rootView.btn_twitter.setOnClickListener(this)
+        rootView.btn_vk.setOnClickListener(this)
+
+        //1-main button
         rootView.cv_main_1.setOnClickListener {
             val bundle = Bundle()
             bundle.putInt("type", 1)
             findNavController().navigate(R.id.listFragment, bundle)
         }
-        //2-button
+        //2-main button
         rootView.cv_main_2.setOnClickListener {
             val bundle = Bundle()
             bundle.putInt("type", 2)
             findNavController().navigate(R.id.listFragment, bundle)
         }
-        //3-button
+        //3-main button
         rootView.cv_main_3.setOnClickListener {
             val bundle = Bundle()
             bundle.putInt("type", 3)
             findNavController().navigate(R.id.listFragment, bundle)
         }
-        //4-button
+        //4-main button
         rootView.cv_main_4.setOnClickListener {
             val bundle = Bundle()
             bundle.putInt("type", 4)
             findNavController().navigate(R.id.listFragment, bundle)
         }
-        //5-button
+        //5-main button
         rootView.cv_main_5.setOnClickListener {
             findNavController().navigate(R.id.pdfFragment)
         }
-        //6-button
+        //6-main button
         rootView.cv_main_6.setOnClickListener {
 
         }
@@ -128,5 +144,25 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     override fun onPause() {
         super.onPause()
         sliderHandler.removeCallbacks(sliderRunnable())
+    }
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+
+        return false
+    }
+
+    override fun onClick(view: View?) {
+        when (view) {
+            rootView.btn_telegram -> {
+            }
+            rootView.btn_facebook -> {
+            }
+            rootView.btn_instagram -> {
+            }
+            rootView.btn_twitter -> {
+            }
+            rootView.btn_vk -> {
+            }
+        }
     }
 }

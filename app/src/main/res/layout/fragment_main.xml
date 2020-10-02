@@ -1,257 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainActivity">
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
-    <LinearLayout
+    <include
+        layout="@layout/content_main"
         android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorWhite"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_menu">
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/vp_ads_top"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:paddingStart="40dp"
-            android:paddingTop="16dp"
-            android:paddingEnd="40dp"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"/>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.5">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cv_main_1"
-                android:layout_width="100dp"
+            <View
+                android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginTop="16dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:soundEffectsEnabled="true"
-                app:cardBackgroundColor="@color/colorAccent"
-                app:cardCornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/cv_main_2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_weight="2" />
 
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/ads"
-                    android:paddingTop="8dp"
-                    android:src="@drawable/ic_android" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1.2"
+                android:id="@+id/btn_telegram"
+                android:background="@null"
+                android:contentDescription="@string/image"
+                app:srcCompat="@drawable/ic_telegram" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center_horizontal"
-                    android:gravity="center"
-                    android:paddingBottom="4dp"
-                    android:text="@string/button1"
-                    android:textColor="#fff"
-                    android:textSize="16sp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:background="@null"
+                android:id="@+id/btn_facebook"
+                android:contentDescription="@string/image"
+                app:srcCompat="@drawable/ic_facebook" />
 
-            </androidx.cardview.widget.CardView>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:background="@null"
+                android:id="@+id/btn_vk"
+                android:contentDescription="@string/image"
+                app:srcCompat="@drawable/ic_vk" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cv_main_2"
-                android:layout_width="100dp"
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:id="@+id/btn_twitter"
+                android:background="@null"
+                android:contentDescription="@string/image"
+                app:srcCompat="@drawable/ic_twitter" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:background="@null"
+                android:id="@+id/btn_instagram"
+                android:contentDescription="@string/image"
+                app:srcCompat="@drawable/ic_instagram" />
+
+            <View
+                android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginTop="16dp"
-                android:clickable="true"
-                android:focusable="true"
-                app:cardBackgroundColor="@color/colorAccent"
-                app:cardCornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/cv_main_1"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_weight="2" />
 
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/ads"
-                    android:paddingTop="8dp"
-                    android:src="@drawable/ic_android" />
+        </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center_horizontal"
-                    android:gravity="center"
-                    android:paddingBottom="4dp"
-                    android:text="@string/button2"
-                    android:textColor="#fff"
-                    android:textSize="16sp" />
-            </androidx.cardview.widget.CardView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.navigation.NavigationView>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.5">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cv_main_3"
-                android:layout_width="100dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="16dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:soundEffectsEnabled="true"
-                app:cardBackgroundColor="@color/colorAccent"
-                app:cardCornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/cv_main_4"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/ads"
-                    android:paddingTop="8dp"
-                    android:src="@drawable/ic_android" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center_horizontal"
-                    android:gravity="center"
-                    android:paddingBottom="4dp"
-                    android:text="@string/button3"
-                    android:textColor="#fff"
-                    android:textSize="16sp" />
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cv_main_4"
-                android:layout_width="100dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="16dp"
-                android:clickable="true"
-                android:focusable="true"
-                app:cardBackgroundColor="@color/colorAccent"
-                app:cardCornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/cv_main_3"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/ads"
-                    android:paddingTop="8dp"
-                    android:src="@drawable/ic_zabalansovie" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center_horizontal"
-                    android:gravity="center"
-                    android:paddingBottom="4dp"
-                    android:text="@string/button4"
-                    android:textColor="#fff"
-                    android:textSize="16sp" />
-            </androidx.cardview.widget.CardView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.5">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cv_main_5"
-                android:layout_width="100dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="16dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:soundEffectsEnabled="true"
-                app:cardBackgroundColor="@color/colorAccent"
-                app:cardCornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/cv_main_6"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/ads"
-                    android:paddingTop="8dp"
-                    android:src="@drawable/ic_zakoni" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center_horizontal"
-                    android:gravity="center"
-                    android:paddingBottom="4dp"
-                    android:text="@string/button5"
-                    android:textColor="#fff"
-                    android:textSize="16sp" />
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cv_main_6"
-                android:layout_width="100dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="16dp"
-                android:clickable="true"
-                android:focusable="true"
-                app:cardBackgroundColor="@color/colorAccent"
-                app:cardCornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/cv_main_5"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/ads"
-                    android:paddingTop="8dp"
-                    android:src="@drawable/ic_dopolnitelni" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center_horizontal"
-                    android:gravity="center"
-                    android:paddingBottom="4dp"
-                    android:text="@string/button6"
-                    android:textColor="#fff"
-                    android:textSize="16sp" />
-            </androidx.cardview.widget.CardView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"/>
-    </LinearLayout>
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

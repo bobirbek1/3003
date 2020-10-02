@@ -15,7 +15,7 @@
         android:id="@+id/mainFragment"
         android:name="com.idrok.a3003.ui.main.MainFragment"
         android:label="MainFragment"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/content_main" />
     <fragment
         android:id="@+id/listChildFragment"
         android:name="com.idrok.a3003.ui.listChildFragment.ListChildFragment"

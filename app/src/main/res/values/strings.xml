@@ -10,7 +10,7 @@
     <string name="button5">Законы</string>
     <string name="button6">Дополнително</string>
 
-<!--    Segments-->
+    <!--    Segments-->
 
     <string name="activeSegment1">Долгосрочные активы</string>
     <string name="activeSegment2">Текущие активы</string>
@@ -18,7 +18,7 @@
     <string name="passiveSegment1">Текущие обязательства</string>
     <string name="passiveSegment2">Собственный капитал</string>
 
-<!--    Активные счета-->
+    <!--    Активные счета-->
 
     <string name="a0100">0100 СЧЕТА УЧЕТА ОСНОВНЫХ СРЕДСТВ</string>
     <string name="a0110">0110 Земля</string>
@@ -98,7 +98,7 @@
     <string name="a0960">0960 Долгосрочные отсроченные расходы по дисконтам (скидкам)</string>
     <string name="a0990">0990 Прочие долгосрочные отсроченные расходы</string>
 
-<!--    activeSegment2-->
+    <!--    activeSegment2-->
 
     <string name="a1000">1000 СЧЕТА УЧЕТА МАТЕРИАЛОВ</string>
     <string name="a1010">010 Сырье и материалы</string>
@@ -279,7 +279,7 @@
     <string name="a5910">5910 Недостачи и потери от порчи ценностей</string>
     <string name="a5920">5920 Прочие текущие активы</string>
 
-<!--    Passive schet-->
+    <!--    Passive schet-->
 
     <string name="p6000">6000 СЧЕТА К ОПЛАТЕ ПОСТАВЩИКАМ И ПОДРЯДЧИКАМ</string>
     <string name="p6010">6010 Счета к оплате поставщикам и подрядчикам</string>
@@ -371,7 +371,7 @@
     <string name="p7910">7910 Финансовая аренда к оплате</string>
     <string name="p7920">7920 Прочие долгосрочные задолженности разным кредиторам</string>
 
-<!--    passiveSegment2-->
+    <!--    passiveSegment2-->
 
     <string name="p8000">8000</string>
 
@@ -411,7 +411,7 @@
     <string name="p8900">8900 СЧЕТА УЧЕТА РЕЗЕРВОВ ПРЕДСТОЯЩИХ РАСХОДОВ И ПЛАТЕЖЕЙ</string>
     <string name="p8910">8910 Резервы предстоящих расходов и платежей</string>
 
-<!--    Tranzitniy schet-->
+    <!--    Tranzitniy schet-->
 
     <string name="t9000">9000 СЧЕТА УЧЕТА ДОХОДОВ ОТ ОСНОВНОЙ (ОПЕРАЦИОННОЙ) ДЕЯТЕЛЬНОСТИ</string>
     <string name="t9010">9010 Доходы от реализации готовой продукции</string>
@@ -473,7 +473,7 @@
     <string name="t9900">9900 СЧЕТА УЧЕТА КОНЕЧНОГО ФИНАНСОВОГО РЕЗУЛЬТАТА</string>
     <string name="t9910">9910 Конечный финансовый результат</string>
 
-<!--    Zabalansovie Scheta-->
+    <!--    Zabalansovie Scheta-->
     <string name="z001">001 Основные средства, полученные по оперативной аренде</string>
     <string name="z002">002 Товарно-материальные ценности, принятые на ответственное хранение</string>
     <string name="z003">003 Материалы, принятые в переработку</string>
@@ -490,4 +490,14 @@
     <string name="z014">014 Инвентарь и хозяйственные принадлежности в эксплуатации</string>
     <string name="z015">015 Имущество, полученное по договору простого товарищества (совместной деятельности)</string>
     <string name="z016">016 Нематериальные активы, полученные по праву пользования</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">search</string>
+    <string name="moliya_studiasi">Moliya Studiasi</string>
+    <string name="tilni_o_zgartirish">Tilni o\'zgartirish</string>
+    <string name="bo_lishish">Bo\'lishish</string>
+    <string name="biz_haqimizda">Biz haqimizda</string>
+    <string name="mobil_ilova_haqida">Mobil ilova haqida</string>
+    <string name="bizni_baholang">Bizni baholang</string>
+    <string name="boshqa_mahsulotlar">Boshqa mahsulotlar</string>
 </resources>

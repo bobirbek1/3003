@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:id="@+id/nav_language"
+        android:title="@string/tilni_o_zgartirish"
+        />
+    <item android:id="@+id/nav_share"
+        android:title="@string/bo_lishish"
+        />
+    <item android:id="@+id/nav_aboutus"
+        android:title="@string/biz_haqimizda"
+        />
+    <item android:id="@+id/nav_about_app"
+        android:title="@string/mobil_ilova_haqida"
+        />
+    <item android:id="@+id/nav_grade"
+        android:title="@string/bizni_baholang"
+        />
+    <item android:id="@+id/nav_products"
+        android:title="@string/boshqa_mahsulotlar"
+        />
+
+</menu>
