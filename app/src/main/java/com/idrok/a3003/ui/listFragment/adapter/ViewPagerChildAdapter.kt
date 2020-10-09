@@ -19,7 +19,7 @@ import java.util.*
 
 
 class ViewPagerChildAdapter(
-    private val callback: ((String) -> Unit)
+    private val callback: ((Int) -> Unit)
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>(), Filterable {
 
     private var listFiltered = arrayListOf<ListItems>()
@@ -54,7 +54,7 @@ class ViewPagerChildAdapter(
 
     // RecyclerView elemenlarini bin qilish
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        if (list[position].type == TITLE_TYPE) {
+        if (listFiltered[position].type == TITLE_TYPE) {
             holder as VH1
             holder.onBind(listFiltered[position].body)
             setAnimation(holder.itemView, position)
@@ -62,7 +62,7 @@ class ViewPagerChildAdapter(
             holder as VH2
             //RecyclerViewni elementi bosilganda callback bilan ListChildni ListFragmentChildga otish
             holder.itemView.setOnClickListener {
-                callback.invoke("string")
+                callback.invoke(listFiltered[position].section)
             }
             holder.onBind(listFiltered[position].body)
             setAnimation(holder.itemView, position)
@@ -94,7 +94,7 @@ class ViewPagerChildAdapter(
     override fun getItemCount(): Int = listFiltered.size
 
     override fun getItemViewType(position: Int): Int {
-        return list[position].type
+        return listFiltered[position].type
     }
 
 

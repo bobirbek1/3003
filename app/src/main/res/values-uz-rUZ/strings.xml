@@ -1,0 +1,505 @@
+
+<resources>
+    <string name="app_name">3003</string>
+
+    <string name="ads" translatable="false">ads</string>
+    <string name="image" translatable="false">image</string>
+
+    <string name="button1" translatable="false">Aktiv schyot</string>
+    <string name="button2" translatable="false">Passiv schyot</string>
+    <string name="button3" translatable="false">Tranzit schyot</string>
+    <string name="button4" translatable="false">Balansdan tashqari schyotlar</string>
+    <string name="button5" translatable="false">Qonunlar</string>
+    <string name="button6" translatable="false">Qo\'shimcha ma\'lumot</string>
+
+    <!--    Segments-->
+
+    <string name="activeSegment1" translatable="false">Uzoq muddatli aktivlar</string>
+    <string name="activeSegment2" translatable="false">Joriy aktivlar</string>
+
+    <string name="passiveSegment1" translatable="false">Joriy majburiyatlar</string>
+    <string name="passiveSegment2" translatable="false">Xususiy kapital</string>
+
+    <!--    Активные счета-->
+
+    <string name="a0100" translatable="false">0100 ASOSIY HISOBLAR </string>
+    <string name="a0110" translatable="false">0110 Yer</string>
+    <string name="a0111" translatable="false">0111 Erlarni obodonlashtirish</string>
+    <string name="a0112" translatable="false">0112 Moliyaviy ijara asosida olingan asosiy vositalarni takomillashtirish</string>
+    <string name="a0120" translatable="false">0120 Binolar, inshootlar va uzatish moslamalari</string>
+    <string name="a0130" translatable="false">0130 Mashinalar va uskunalar</string>
+    <string name="a0140" translatable="false">0140 Mebel va ofis jihozlari</string>
+    <string name="a0150" translatable="false">0150 Kompyuter texnikasi va hisoblash texnologiyasi </string>
+    <string name="a0160" translatable="false">0160 Transport vositasi</string>
+    <string name="a0170" translatable="false">0170 Mehnat va mahsuldor chorvachilik</string>
+    <string name="a0180" translatable="false">0180 Ko\'p yillik o\'simliklar</string>
+    <string name="a0190" translatable="false">0190 Boshqa asosiy vositalar</string>
+    <string name="a0199" translatable="false">0199 Kuyovlangan asosiy vositalar</string>
+
+    <string name="a0200" translatable="false">0200 ASOSIY AKTIYLARNING DEKRETSIYA SAYDLARI</string>
+    <string name="a0211" translatable="false">0211 Erlarni obodonlashtirish uchun kiyinish</string>
+    <string name="a0212" translatable="false">0212 Moliyaviy ijara asosida olingan asosiy vositalarni takomillashtirish amortizatsiyasi</string>
+    <string name="a0220" translatable="false">0220 Binolar, inshootlar va uzatish moslamalarining amortizatsiyasi</string>
+    <string name="a0230" translatable="false">0230 Mashina va uskunalarning eskirishi</string>
+    <string name="a0240" translatable="false">0240 Mebel va ofis jihozlarini taqinglar</string>
+    <string name="a0250" translatable="false">0250 Kompyuter texnikasi va hisoblash texnikasining buzilishi</string>
+    <string name="a0260" translatable="false">0260 Avtomobillarning eskirishi</string>
+    <string name="a0270" translatable="false">0270 Qoralama hayvonlarning kiyinishi va yirtilishi</string>
+    <string name="a0280" translatable="false">0280 Ko\'p yillik plantatsiyalarning kiyimi</string>
+    <string name="a0290" translatable="false">0290 Boshqa asosiy vositalarning amortizatsiyasi</string>
+    <string name="a0299" translatable="false">0299 Moliyaviy lizing asosida olingan asosiy vositalarning amortizatsiyasi</string>
+
+    <string name="a0300" translatable="false">"0300 Moliyaviy lizing shartnomasi bo'yicha olingan asosiy aktivlarning hisob-kitoblari</string>
+    <string name="a0310" translatable="false">00310 Moliyaviy lizing asosida olingan asosiy vositalar</string>
+
+    <string name="a0400">0400 Nomaddiy aktivlar uchun hisob-kitoblar</string>
+    <string name="a0410">0410 Patentlar, litsenziyalar va nou-xaular</string>
+    <string name="a0420">0420 Savdo markalari, tovar belgilari va sanoat namunalari</string>
+    <string name="a0430">0430 Dasturiy ta\'minot</string>
+    <string name="a0440">0440 Yer va tabiiy resurslardan foydalanish huquqlari</string>
+    <string name="a0460">0460 Franchayzing</string>
+    <string name="a0470">0470 Mualliflik huquqi</string>
+    <string name="a0480">0480 Yaxshi niyat </string>
+    <string name="a0490">0490 Boshqa nomoddiy aktivlar</string>
+
+    <string name="a0500">0500 NOMODIY AKTIYLARNI KO\'RSATISh UCHUN HISOBLAR</string>
+    <string name="a0510">0510 Patentlar, litsenziyalar va nou-xaularning amortizatsiyasi </string>
+    <string name="a0520">0520 Brendlar, tovar belgilari va sanoat namunalarining amortizatsiyasi</string>
+    <string name="a0530">0530 Amortizatsiya dasturlari</string>
+    <string name="a0540">0540 Yer va tabiiy resurslardan foydalanish huquqlarining amortizatsiyasi</string>
+    <string name="a0560">0560 Franchayzing amortizatsiyasi</string>
+    <string name="a0570">0570 Mualliflik huquqining amortizatsiyasi</string>
+    <string name="a0590">0590 Boshqa nomoddiy aktivlarning amortizatsiyasi </string>
+
+    <string name="a0600">0600 UZOQ MUDDATLI Sarmoyalar bo\'yicha hisob-kitoblar</string>
+    <string name="a0610">0610 Qimmat baho qog\'ozlar</string>
+    <string name="a0620">0620 Filiallar sarmoyalari</string>
+    <string name="a0630">0630 Qaram xo\'jalik yurituvchi sub\'ektlarga investitsiyalar</string>
+    <string name="a0640">0640 Chet el kapitali ishtirokidagi kompaniyaga sarmoyalar</string>
+    <string name="a0690">0690 Boshqa uzoq muddatli investitsiyalar</string>
+
+    <string name="a0700">0700 O\'rnatish uchun buxgalteriya uskunalari</string>
+    <string name="a0710">0710 O\'rnatish uchun uskunalar - mahalliy</string>
+    <string name="a0720">0720 O\'rnatish uchun uskunalar - import qilingan</string>
+
+    <string name="a0800">0800  KAPITAL HISOBLAR</string>
+    <string name="a0810">0810 Qurilish jarayoni tugamoqda</string>
+    <string name="a0820">0820 Asosiy vositalarni sotib olish</string>
+    <string name="a0830">0830 Nomoddiy aktivlarni sotib olish</string>
+    <string name="a0840">0840 Asosiy podaning shakllanishi</string>
+    <string name="a0850">0850 Yerlarni obodonlashtirishga kapital qo\'yilmalar</string>
+    <string name="a0860">0860 Asosiy lizingga moliyaviy ijara asosida olingan kapital qo\'yilmalar</string>
+    <string name="a0890">0890 Boshqa kapital qo\'yilmalar</string>
+
+    <string name="a0900">0900 Uzoq muddatli qabul qilinadigan va kechiktirilgan xarajatlar uchun  hisob-kitoblari</string>
+    <string name="a0910">0910 Xarajatlar kelib tushdi</string>
+    <string name="a0920">0920 Moliyaviy ijara uchun olinadigan to\'lovlar</string>
+    <string name="a0930">0930 Xodimlarning uzoq muddatli qarzi</string>
+    <string name="a0940">0940 Boshqa uzoq muddatli debitorlik qarzlari</string>
+    <string name="a0950">0950 Vaqtinchalik farqlar bo\'yicha kechiktirilgan daromad solig\'i</string>
+    <string name="a0960">0960 chegirmalar (chegirmalar) bo\'yicha uzoq muddatli kechiktirilgan xarajatlar</string>
+    <string name="a0990">0990 Boshqa uzoq muddatli kechiktirilgan xarajatlar</string>
+
+    <!--    activeSegment2-->
+
+    <string name="a1000">1000 MATERIALLARNING HISOBI</string>
+    <string name="a1010">1010 Xom ashyo va materiallar</string>
+    <string name="a1020">1020 Sotib olingan yarim tayyor mahsulotlar va butlovchi buyumlar</string>
+    <string name="a1030">1030 Yoqilg\'i</string>
+    <string name="a1040">1040 ehtiyot qismlar</string>
+    <string name="a1050">1050 Qurilish materiallari</string>
+    <string name="a1060">1070 tashqi manbadan olingan material</string>
+    <string name="a1070">1080 inventarizatsiya va uy anjomlari</string>
+    <string name="a1080">1080 Инвентарь и хозяйственные принадлежности</string>
+    <string name="a1090">1090 Boshqa materiallar</string>
+
+    <string name="a1100">1100 O\'sish va semirish uchun hayvonlar hisobi </string>
+    <string name="a1110">1110 Chorvachilik</string>
+    <string name="a1120">1120 Hayvonlarni boqish</string>
+
+    <string name="a1200">1200</string>
+
+    <string name="a1300">1300</string>
+
+    <string name="a1400">1400</string>
+
+    <string name="a1500">1500 Materiallarni tayyorlash va sotib olish uchun buxgalteriya hisobi</string>
+    <string name="a1510">1510 Materiallarni sotib olish va sotib olish</string>
+
+    <string name="a1600">1600 MATERIALLAR NARXIDAGI VARIATSIYA HISOBI</string>
+    <string name="a1610">1610 Materiallar narxining farqlari</string>
+
+    <string name="a1700">1700</string>
+
+    <string name="a1800">1800</string>
+
+    <string name="a1900">1900</string>
+
+    <string name="a2000">2000 ASOSIY ISHLAB CHIQARISH HISOBLARI</string>
+    <string name="a2010">2010 Birlamchi ishlab chiqarish</string>
+
+    <string name="a2100">2100 HISOBLAR YARIMIY TAMIRLANGAN O\'Z ISHLAB CHIQARISHI</string>
+    <string name="a2110">2110 O\'zimiz ishlab chiqaradigan yarim tayyor mahsulotlar</string>
+
+    <string name="a2200">2200</string>
+
+    <string name="a2300">2300 Yordamchi mahsulotlarning hisob-kitoblari</string>
+    <string name="a2310">2310 Yordamchi ishlab chiqarish</string>
+
+    <string name="a2400">2400</string>
+
+    <string name="a2500">2500 UMUMIY ISHLAB CHIQARISH XARAJATLARINING  HISOBI</string>
+    <string name="a2510">2510 Umumiy operatsion xarajatlar</string>
+
+    <string name="a2600">2510 Umumiy operatsion xarajatlar</string>
+    <string name="a2610">2610 Ishlab chiqarishdagi nuqson</string>
+
+    <string name="a2700">2700 XIZMAT Xo\'jaliklarining  hisobi</string>
+    <string name="a2710">2710 Xizmat ko\'rsatadigan fermer xo\'jaliklari</string>
+
+    <string name="a2800">2800 TAYYOR MAHSULOTLARNING HISOBI</string>
+    <string name="a2810">2810 Zaxiradagi tayyor mahsulotlar</string>
+    <string name="a2820">2820 ko\'rgazmada tayyor mahsulotlar</string>
+    <string name="a2830">2830 Tayyor mahsulotlar komissiyaga o\'tkazildi</string>
+
+    <string name="a2900">2900 Tovarlarning hisobi</string>
+    <string name="a2910">2910 Omborlardagi tovarlar</string>
+    <string name="a2920">2920 chakana savdo tovarlari </string>
+    <string name="a2930">2930 Namoyish etilgan mahsulotlar</string>
+    <string name="a2940">2940 Ijara buyumlari</string>
+    <string name="a2950">2950 Tovar ostidagi idish va bo\'sh</string>
+    <string name="a2960">2960 Komissiyaga o\'tkazilgan tovarlar</string>
+    <string name="a2970">2970 tranzit mollari</string>
+    <string name="a2980">2980 savdo marjasi</string>
+    <string name="a2990">2990 Boshqa tovarlar</string>
+
+    <string name="a3000">3000</string>
+
+    <string name="a3100">3100 Kelajakdagi davrlar uchun  ta hisob</string>
+    <string name="a3110">3110 Prepaid operatsion ijarasi</string>
+    <string name="a3120">3120 Prepaid xizmatlari</string>
+    <string name="a3130">3190 Oldindan to\'langan boshqa xarajatlar</string>
+
+    <string name="a3200">3200 MUVOFIQ XARAJATLAR SAYDLARI</string>
+    <string name="a3210">3210 Vaqtinchalik farqlar bo\'yicha kechiktirilgan daromad solig\'i</string>
+    <string name="a3220">3220 chegirmalar (chegirmalar) bo\'yicha kechiktirilgan xarajatlar</string>
+    <string name="a3290">3290 Boshqa kechiktirilgan xarajatlar</string>
+
+    <string name="a3300">3300</string>
+
+    <string name="a3400">3400</string>
+
+    <string name="a3500">3500</string>
+
+    <string name="a3600">3600</string>
+
+    <string name="a3700">3700</string>
+
+    <string name="a3800">3800</string>
+
+    <string name="a3900">3900</string>
+
+    <string name="a4000">4000 QABUL QILISH UChUN  FOYDALANISh</string>
+    <string name="a4010">4010 Xaridorlar va mijozlardan olinadigan schyotlar</string>
+    <string name="a4020">4020 veksellar qabul qilindi</string>
+
+    <string name="a4100">4100 Alohida bo\'linmalardan, subvensiyalardan va mustaqil biznes-kompaniyalardan olingan ta hisob</string>
+    <string name="a4110">4110 Alohida bo\'linmalarning debitorlik qarzlari</string>
+    <string name="a4120">4120 Sho\'ba va sho\'ba korxonalardan debitorlik qarzlari</string>
+
+    <string name="a4200">4200 Xodimlarga berilgan  avans buxgalteriya hisobi</string>
+    <string name="a4210">4210 Ish haqi bo\'yicha to\'lanadigan avanslar</string>
+    <string name="a4220">4220 sayohat bo\'yicha avanslar</string>
+    <string name="a4230">4230 Umumiy xarajatlar uchun to\'lanadigan avanslar</string>
+    <string name="a4290">4290 Xodimlarga boshqa avanslar</string>
+
+    <string name="a4300">4300 Ta\'minlovchilar va pudratchilarga beriladigan  avans buxgalteriya hisobi</string>
+    <string name="a4310">4310 Ta\'minlovchilar va pudratchilarga tovarlar va materiallar uchun berilgan avanslar</string>
+    <string name="a4320">4320 Ta\'minlovchilar va pudratchilarga uzoq muddatli aktivlarga nisbatan berilgan avanslar</string>
+    <string name="a4330">4330 berilgan boshqa avanslar</string>
+
+    <string name="a4400">4400 BUJJETGA TO\'LANIShNING ISHLAB CHIQARILGAN HISOBLARI</string>
+    <string name="a4410">4410 Soliqlar va byudjetga boshqa majburiy to\'lovlar bo\'yicha avans to\'lovlari (turlari bo\'yicha)</string>
+
+    <string name="a4500">4500 DAVLAT MAKSAD FONDLARI VA Sug\'urtalashga avans to\'lovi bo\'yicha buxgalteriya hisobi</string>
+    <string name="a4510">4510 Sug\'urta uchun avans to\'lovlari</string>
+    <string name="a4520">4520 Davlat maqsadli jamg\'armalariga avans to\'lovlari</string>
+
+    <string name="a4600">4600 VAKOLATLANGAN PAYITOHDAGA OMONLAR BO\'YIChA  SAYDI QARShI</string>
+    <string name="a4610">4610 Ta\'sischilarning ustav kapitaliga qo\'shgan hissasi bo\'yicha qarzi</string>
+
+    <string name="a4700">4700 BOShQA FAOLIYATLAR UChUN  XODIM HISOBI</string>
+    <string name="a4710">4710 Kreditga sotilgan tovarlar uchun xodimlarning qarzdorligi</string>
+    <string name="a4720">4720 Berilgan kreditlar bo\'yicha xodimlarning qarzi</string>
+    <string name="a4730">4730 Moddiy zararni qoplash uchun  xodimlarning qarzi</string>
+    <string name="a4790">4790 Boshqa xodimlarning kreditorlik qarzlari</string>
+
+    <string name="a4800">4800  qarz hisobi</string>
+    <string name="a4810">4810 Moliya lizing to\'lovlari - joriy qism</string>
+    <string name="a4820">4820 Operatsion lizing uchun olinadigan to\'lovlar</string>
+    <string name="a4830">4830 Foizlar bo\'yicha qarzlar</string>
+    <string name="a4840">4840 dividendlar</string>
+    <string name="a4850">4850 qarzdorlik qarzdorligi</string>
+    <string name="a4860">4860 Da\'volar bo\'yicha debitorlik qarzlari</string>
+    <string name="a4890">4890 Boshqa qarzdorlarning qarzlari</string>
+
+    <string name="a4900">4900 Shubhali qarzlar uchun  buxgalteriya hisobi</string>
+    <string name="a4910">4910 Shubhali qarzlar uchun zaxira</string>
+
+    <string name="a5000">5000 Naqd pulda  ta hisob-kitob</string>
+    <string name="a5010">5010 Milliy valyutadagi naqd pul</string>
+    <string name="a5020">5020 Chet el valyutasidagi naqd pul</string>
+
+    <string name="a5100">5100 NASD HISOB SAYDI</string>
+    <string name="a5110">5110 Hisob raqami</string>
+
+    <string name="a5200">5200 CHET VALYUTADA NASD HISOBOT</string>
+    <string name="a5210">5210 Валютные счета внутри страны</string>
+    <string name="a5220">5220 Valyuta hisobvaraqlari</string>
+
+    <string name="a5300">5300</string>
+
+    <string name="a5400">5400</string>
+
+    <string name="a5500">5500 BANKDAGI MAXSUS SAYDALARDA  NAQD SAYD</string>
+    <string name="a5510">5510 akkreditivlar</string>
+    <string name="a5520">5520 chek daftarlari</string>
+    <string name="a5530">5530 Boshqa maxsus hisobvaraqlar</string>
+
+    <string name="a5600">5600 NAKD TEXVALENTLAR SAYDI</string>
+    <string name="a5610">5610 naqd pul ekvivalenti (turlari bo\'yicha)</string>
+
+    <string name="a5700">5700 Yo\'lda  naqd hisob-kitob (pul o\'tkazmasi)</string>
+    <string name="a5710">5710 Yo\'lda naqd pul (o\'tkazmalar)</string>
+
+    <string name="a5800">5800 QISQA MUDDATLI Sarmoyalar uchun hisob</string>
+    <string name="a5810">5810 Qimmatli qog\'ozlar</string>
+    <string name="a5830">5830 qisqa muddatli kreditlar berildi</string>
+    <string name="a5890">5890 Boshqa joriy investitsiyalar</string>
+
+    <string name="a5900">5900 QISMALAR VA ZARARDAN QADRIYLARGA QARSHI VA BOShQA AKTIY AKTIV aktivlar</string>
+    <string name="a5910">5910 Qimmatbaho buyumlarga etkazilgan zarar va etishmovchiliklar</string>
+    <string name="a5920">5920 Boshqa joriy aktivlar</string>
+
+    <!--    Passive schet-->
+
+    <string name="p6000">6000 Ta\'minlovchilar va pudratchilarga to\'lanadigan 6000 ta faktura</string>
+    <string name="p6010">6010 etkazib beruvchilar va pudratchilarga to\'lanadigan hisob-fakturalar</string>
+    <string name="p6020">6020 ta veksellar chiqarildi</string>
+
+    <string name="p6100">6100 Alohida bo\'limlar, sub\'ektlar va mustaqil biznes-kompaniyalar tomonidan to\'lanadigan QARSh</string>
+    <string name="p6110">6110Alohida bo\'linmalarga to\'lanadigan qarzlar</string>
+    <string name="p6120">6120 Filiallar va qaram xo\'jalik yurituvchi sub\'ektlar uchun qarzlar</string>
+
+    <string name="p6200">6200 MAVJUDLIK HISOBI</string>
+    <string name="p6210">6210 chegirma (chegirmalar) ko\'rinishidagi kechiktirilgan daromad</string>
+    <string name="p6220">Premium (mukofot) ko\'rinishidagi kechiktirilgan daromad</string>
+    <string name="p6230">6230 Boshqa kechiktirilgan daromadlar</string>
+    <string name="p6240">6240 Kechiktirilgan soliqlar va boshqa majburiy to\'lovlar bo\'yicha majburiyatlar</string>
+    <string name="p6250">6250 Vaqtinchalik farqlar bo\'yicha kechiktirilgan daromad solig\'i majburiyatlari</string>
+    <string name="p6290">6290 Boshqa kechiktirilgan majburiyatlar</string>
+
+    <string name="p6300">6300 QABUL QILGAN OVDALAR UChUN  BUXgalteriya hisobi</string>
+    <string name="p6310">6310 Xaridorlar va mijozlardan olingan avanslar</string>
+    <string name="p6320">6320 Abonentlardan aktsiyalar bo\'yicha olingan avans</string>
+    <string name="p6390">6390 Boshqa olingan avanslar</string>
+
+    <string name="p6400">6400 byudjetni to\'lash bo\'yicha hisob-kitoblar</string>
+    <string name="p6410">6410 byudjetga to\'lovlar bo\'yicha qarzdorlik (turlari bo\'yicha)</string>
+
+    <string name="p6500">6500 HUKUMATNING ISHONCH FONDLARIGA  Sug\'urta va to\'lovni hisobga olish</string>
+    <string name="p6510">6510 sug\'urta to\'lovlari</string>
+    <string name="p6520">6520 Davlat maqsadli jamg\'armalariga to\'lovlar</string>
+
+    <string name="p6600">6600 ASOSCHILARGA SAYDI KARZ</string>
+    <string name="p6610">6610 to\'lanadigan dividendlar</string>
+    <string name="p6620">6620 Ishdan chiqayotgan muassislarga ularning ulushi bo\'yicha qarzlar</string>
+    <string name="p6630">6630  Ta\'sischilarning ustav kapitalini oshirish uchun qo\'shgan hissalari</string>
+
+    <string name="p6700">6700 MEHNAT UChUN XADIMNI TO\'LASH UChUN HISOB QISMASI</string>
+    <string name="p6710">6710 Ish haqi uchun xodimlarga to\'lovlar</string>
+    <string name="p6720">6720 Depozit qilingan ish haqi</string>
+
+    <string name="p6800">6800 QISQA MUDDATLI KREDITLAR VA KREDITLAR UCHUN HISOB</string>
+    <string name="p6810">6810 Qisqa muddatli bank kreditlari</string>
+    <string name="p6820">6820 Qisqa muddatli kreditlar</string>
+    <string name="p6830">6830 To\'lanadiganta obligatsiyalar</string>
+    <string name="p6840">6840 To\'lanadigan to\'lovlar</string>
+
+    <string name="p6900">6900 TURLI KREDITORLARGA QARZ HISOBLARI</string>
+    <string name="p6910">6910 Operatsion ijara haqi</string>
+    <string name="p6920">6920 Hisoblangan foizlar</string>
+    <string name="p6930">6930 royalti to\'lanishi kerak</string>
+    <string name="p6940">6940 Kafolat qarzi</string>
+    <string name="p6950">6950 Uzoq muddatli majburiyatlar - muddatli qism</string>
+    <string name="p6960">6960 Da\'volar bo\'yicha kreditorlik qarzlari</string>
+    <string name="p6970">6970 Hisobdor shaxslarga qarzlar</string>
+    <string name="p6990">6990 Boshqa majburiyatlar</string>
+
+    <string name="p7000">7000 Ta\'minlovchilar va pudratchilarga to\'lanadigan uzoq muddatli hisob-kitoblar</string>
+    <string name="p7010">7010 etkazib beruvchilar va pudratchilarga to\'lanadigan hisob-fakturalar</string>
+    <string name="p7020">7020 veksellar chiqarildi</string>
+
+    <string name="p7100">7100 TASHKILOTLAR, SUDDORLIKLAR VA BOSHQA TADBIRKORLIK KOMPANIYALARINI AJRATISH UChUN MUHDDAVIY QARZ</string>
+    <string name="p7110">7110 Alohida bo\'linmalarga uzoq muddatli qarz</string>
+    <string name="p7120">7120 Sho\'ba va qaram xo\'jalik yurituvchi sub\'ektlar oldida uzoq muddatli qarz</string>
+
+    <string name="p7200">7200 UZOQ MUDDATLI MASLAHAT HISOBOTI</string>
+    <string name="p7210">7210 chegirma (chegirmalar) ko\'rinishidagi uzoq muddatli kechiktirilgan daromad</string>
+    <string name="p7220">7220 mukofot (mukofot) ko\'rinishidagi uzoq muddatli kechiktirilgan daromad</string>
+    <string name="p7230">7230 Boshqa kechiktirilgan daromadlar</string>
+    <string name="p7240">7240 Uzoq muddatli kechiktirilgan soliqlar va boshqa majburiy to\'lovlar</string>
+    <string name="p7250">7250 Vaqtinchalik farqlar bo\'yicha uzoq muddatli kechiktirilgan daromad solig\'i majburiyatlari</string>
+    <string name="p7290">7290 Boshqa uzoq muddatli kechiktirilgan majburiyatlar</string>
+
+    <string name="p7300">7300 Xaridorlar va xaridorlardan olingan avanslar uchun hisob-kitoblar</string>
+    <string name="p7310">7310 xaridorlar va mijozlardan olingan avanslar</string>
+
+    <string name="p7400">7400</string>
+
+    <string name="p7500">7500</string>
+
+    <string name="p7600">7600</string>
+
+    <string name="p7700">7700</string>
+
+    <string name="p7800">7800 Uzoq muddatli kreditlar va qarzlar bo\'yicha hisob-kitoblar</string>
+    <string name="p7810">7810 uzoq muddatli bank kreditlari</string>
+    <string name="p7820">7820 Uzoq muddatli kreditlar</string>
+    <string name="p7830">7830 To\'lanadigan majburiyatlar</string>
+    <string name="p7840">7840 to\'lanadigan veksellar</string>
+
+    <string name="p7900">7900 TURLI KREDITORLAR UChUN UZOQ MUDDATLI QARZ HISOBLARI</string>
+    <string name="p7910">7910 moliya ijarasi</string>
+    <string name="p7920">7920 Turli xil kreditorlarga boshqa uzoq muddatli qarzlar</string>
+
+    <!--    passiveSegment2-->
+
+    <string name="p8000">8000</string>
+
+    <string name="p8100">8100</string>
+
+    <string name="p8200">8200</string>
+
+    <string name="p8300">8300 Vakolatli kapital hisoblari</string>
+    <string name="p8310">8310 oddiy aksiyalar</string>
+    <string name="p8320">8320 ta imtiyozli aktsiyalar</string>
+    <string name="p8330">8330 Aktsiyalar va depozitlar</string>
+
+    <string name="p8400">8400 QO\'ShIMChA KAPITAL HISOBLARI</string>
+    <string name="p8410">8410 aktsiya mukofoti</string>
+    <string name="p8420">8420 Ustav kapitalini shakllantirishdagi kurs farqi</string>
+
+    <string name="p8500">8500 zaxira nusxasini yaratgan kapital hisob qaydnomalari</string>
+    <string name="p8510">8510 Uzoq muddatli aktivlarni qayta baholash bo\'yicha tuzatishlar</string>
+    <string name="p8520">8520 zaxira kapitali (fond)</string>
+    <string name="p8530">8530 Mulk bepul olingan</string>
+
+    <string name="p8600">8600 Sotib olingan aktsiyalar uchun hisob-kitoblar</string>
+    <string name="p8610">8610 Qayta sotib olingan xazina aktsiyalari - oddiy</string>
+    <string name="p8620">8620 G\'aznachilik aktsiyalari - imtiyozli</string>
+
+    <string name="p8700">8700 TUZILMAYDIGAN FOYDANI TANISh UChUN HISOBLAR</string>
+    <string name="p8710">8710 Hisobot davrining taqsimlanmagan foydasi (qoplanmagan zarari)</string>
+    <string name="p8720">8720 Yig\'ilgan foyda (qoplanmagan zarar)</string>
+
+    <string name="p8800">8800 Maqsadli daromadlar bo\'yicha hisob-kitoblar</string>
+    <string name="p8810">8810 Grantlar</string>
+    <string name="p8820">8820 subsidiyalar</string>
+    <string name="p8830">8830 A\'zolik badallari</string>
+    <string name="p8840">8840 foydalanishga mo\'ljallangan soliq imtiyozlari</string>
+    <string name="p8890">8890 Har xil maqsadli daromad</string>
+
+    <string name="p8900">8900 Kelajakdagi xarajatlar va to\'lovlar bo\'yicha hisob-kitoblar</string>
+    <string name="p8910">8910 Kelajakdagi xarajatlar va to\'lovlar uchun zaxira</string>
+
+    <!--    Tranzitniy schet-->
+
+    <string name="t9000">9000 ASOSIY (ISHLAB CHIQARISH) FAOLIYATLARIDAN KIRIShLARNI HISOBLAR</string>
+    <string name="t9010">9010 Tayyor mahsulotni sotishdan olingan daromad</string>
+    <string name="t9020">9020 Mahsulotlarni sotishdan olingan daromad</string>
+    <string name="t9030">9030 Ishlarni bajarish va xizmatlar ko\'rsatishdan olingan daromad</string>
+    <string name="t9040">9040 Sotilgan buyumlarni qaytarish</string>
+    <string name="t9050">9050 Xaridorlar va mijozlarga taqdim etiladigan chegirmalar</string>
+
+    <string name="t9100">9100 SOTILGAN MAHSULOTLAR (MAHSULOTLAR, ISHLAR, XIZMATLAR)</string>
+    <string name="t9110">99110 Sotilgan tayyor mahsulot tannarxi</string>
+    <string name="t9120">9120 Sotilgan tovarlarning narxi</string>
+    <string name="t9130">9130 Bajarilgan ishlar va ko\'rsatilgan xizmatlarning narxi</string>
+    <string name="t9140">9140 TMZ-ni davriy buxgalteriya hisobi bilan sotib olish / sotib olish</string>
+    <string name="t9150">9150 zaxiralarni davriy hisobga olish bilan tuzatishlar</string>
+
+    <string name="t9200">9200 O\'ZGARTIRILGAN OVITLAR VA BOShQA BO\'YIChA AKSIYALARNI O\'CHIRISh UChUN HISOB</string>
+    <string name="t9210">9210 Asosiy vositalarni bekor qilish</string>
+    <string name="t9220">9220 Boshqa aktivlarni bekor qilish</string>
+
+    <string name="t9300">9300 ASOSIY FAOLIYATLARDAN BOShQA KIRIShLAR UChUN SAYDLAR</string>
+    <string name="t9310">9310 Asosiy vositalarni tasarruf etishdan olingan daromad</string>
+    <string name="t9320">9320 Boshqa aktivlarni tasarruf etishdan olingan daromad</string>
+    <string name="t9330">9330 To\'langan foizlar, jarimalar, jarimalar</string>
+    <string name="t9340">9340 O\'tgan yillardagi foyda</string>
+    <string name="t9350">9350 Operatsion ijaradan olingan daromad</string>
+    <string name="t9360">9360 kreditorlik va kreditorlik qarzlarini hisobdan chiqarishdan olingan daromadlar</string>
+    <string name="t9370">9370 xizmat ko\'rsatuvchi fermer xo\'jaliklarining daromadlari</string>
+    <string name="t9380">9380 Savatga qo\'shish Royalty bepul moliyaviy yordam</string>
+    <string name="t9390">9390 Boshqa operatsion daromadlar</string>
+
+    <string name="t9400">9400 MAVJUD XARAJATLAR HISOBLARI</string>
+    <string name="t9410">9410 Sotish xarajatlari</string>
+    <string name="t9420">9420 Ma\'muriy xarajatlar</string>
+    <string name="t9430">9430 Boshqa operatsion xarajatlar</string>
+
+    <string name="t9500">9500 MOLIYa FAOLIYATIDAN KO\'RSATGAN JISOBLAR</string>
+    <string name="t9510">9510 royalti daromadi</string>
+    <string name="t9520">9520 Dividendlardan olinadigan daromad</string>
+    <string name="t9530">9530 Foiz daromadi</string>
+    <string name="t9540">9540 Valyuta yutuqlari</string>
+    <string name="t9550">9550 moliya ijarasi bo\'yicha daromad</string>
+    <string name="t9560">9560 Qimmatli qog\'ozlarni qayta baholashdan olingan daromad</string>
+    <string name="t9590">9590 Moliyalashtirish faoliyatidan olingan boshqa daromadlar</string>
+
+    <string name="t9600">9600 MOLIYa SAYDALARI SAYDLARI</string>
+    <string name="t9610">9610 Foizlar bo\'yicha xarajatlar</string>
+    <string name="t9620">9620 Valyuta kursi farqlaridagi zararlar</string>
+    <string name="t9630">9630 Qimmatli qog\'ozlarni chiqarish va tarqatish xarajatlari</string>
+    <string name="t9690">9690 Boshqa moliyaviy xarajatlar</string>
+
+    <string name="t9700">9700 FAVQULODIY FOYDA (YO\'QOTISH) SAYDLARI</string>
+    <string name="t9710">9710 Favqulodda foyda</string>
+    <string name="t9720">9720 Favqulodda yo\'qotishlar</string>
+
+    <string name="t9800">9800 Soliqlarni to\'lash va boshqa majburiy to\'lovlarni to\'lash uchun foydadan foydalanish bo\'yicha hisob-kitoblar</string>
+    <string name="t9810">9810 Daromad solig\'i bo\'yicha xarajatlar</string>
+    <string name="t9820">99820 Boshqa soliqlar va boshqa majburiy to\'lovlar foydadan xarajatlar</string>
+
+    <string name="t9900">9900 MOLIYAVIY Natija hisob-kitoblari</string>
+    <string name="t9910">9910 Yakuniy moliyaviy natija</string>
+
+    <!--    Zabalansovie Scheta-->
+    <string name="z001">001 Asosiy vositalar operatsion ijaraga olingan</string>
+    <string name="z002">002 Saqlash uchun qabul qilingan zaxiralar</string>
+    <string name="z003">003 Ishlov berish uchun qabul qilingan materiallar</string>
+    <string name="z004">004 Komissiya uchun qabul qilingan tovarlar</string>
+    <string name="z005">005 O\'rnatish uchun uskunalar qabul qilindi</string>
+    <string name="z006">006 Qattiq hisobot shakllari</string>
+    <string name="z007">007 To\'lovga qodir bo\'lmagan qarzdorlarning hisobdan chiqarilgan qarzlari</string>
+    <string name="z008">008 Majburiyatlar va to\'lovlar uchun xavfsizlik - olingan</string>
+    <string name="z009">009 Majburiyatlar va to\'lovlar uchun xavfsizlik - chiqarilgan</string>
+    <string name="z010">010 Asosiy vositalar moliyaviy ijara asosida ijaraga olingan</string>
+    <string name="z011">011 Kredit shartnomasi bo\'yicha olingan mol-mulk</string>
+    <string name="z012">012 Quyidagi davrlarning soliq solinadigan bazasidan chiqarilgan xarajatlar</string>
+    <string name="z013">013 vaqtinchalik soliq imtiyozlari (turlari bo\'yicha)</string>
+    <string name="z014">014 Amaldagi inventarizatsiya va uy anjomlari</string>
+    <string name="z015">015 Oddiy sheriklik (birgalikdagi faoliyat) shartnomasi bo\'yicha olingan mulk</string>
+    <string name="z016">016 Foydalanish huquqi bilan olingan nomoddiy aktivlar</string>
+
+    <string name="search">search</string>
+    <string name="moliya_studiasi">Moliya Studiasi</string>
+    <string name="tilni_o_zgartirish">Tilni o\'zgartirish</string>
+    <string name="bo_lishish">Bo\'lishish</string>
+    <string name="biz_haqimizda">Biz haqimizda</string>
+    <string name="mobil_ilova_haqida">Mobil ilova haqida</string>
+    <string name="bizni_baholang">Bizni baholang</string>
+    <string name="boshqa_mahsulotlar">Boshqa mahsulotlar</string>
+    <string name="tilni_tanlang">o\'zingizga mos tilni tanlang</string>
+</resources>

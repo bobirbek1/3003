@@ -17,14 +17,24 @@
         android:label="MainFragment"
         tools:layout="@layout/content_main" />
     <fragment
-        android:id="@+id/listChildFragment"
-        android:name="com.idrok.a3003.ui.listChildFragment.ListChildFragment"
+        android:id="@+id/dataFragment"
+        android:name="com.idrok.a3003.ui.dataFragment.DataFragment"
         android:label="ListChildFragment"
-        tools:layout="@layout/fragment_viewpager_child" />
+        tools:layout="@layout/fragment_data" />
     <fragment
         android:id="@+id/pdfFragment"
         android:name="com.idrok.a3003.ui.pdfFragment.PdfFragment"
         android:label="PdfFragment"
         tools:layout="@layout/fragment_pdf_reader"/>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.idrok.a3003.ui.languageFragment.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.idrok.a3003.ui.bookmark.BookmarkFragment"
+        android:label="fragment_bookmark"
+        tools:layout="@layout/fragment_bookmark" />
 
 </navigation>

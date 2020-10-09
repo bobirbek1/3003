@@ -8,5 +8,9 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    
+    <style name="SwitchCompatTheme">
+        <item name="color" >@color/colorWhite</item>
+    </style>
 
 </resources>

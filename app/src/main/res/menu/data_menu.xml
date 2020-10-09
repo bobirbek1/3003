@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/data_search"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:title="@string/search" />
+    <item
+        android:id="@+id/data_bookmark"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_bookmark_border"
+        android:title="@string/tilni_o_zgartirish" />
+    <item
+        android:id="@+id/data_share"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_share_white"
+        android:title="@string/bo_lishish" />
+
+</menu>

@@ -101,12 +101,12 @@
     <!--    activeSegment2-->
 
     <string name="a1000">1000 СЧЕТА УЧЕТА МАТЕРИАЛОВ</string>
-    <string name="a1010">010 Сырье и материалы</string>
+    <string name="a1010">1010 Сырье и материалы</string>
     <string name="a1020">1020 Покупные полуфабрикаты и комплектующие изделия</string>
     <string name="a1030">1030 Топливо</string>
     <string name="a1040">1040 Запасные части</string>
     <string name="a1050">1050 Строительные материалы</string>
-    <string name="a1060">060 Тара и тарные материалы</string>
+    <string name="a1060">1060 Тара и тарные материалы</string>
     <string name="a1070">1070 Материалы, переданные в переработку на сторону</string>
     <string name="a1080">1080 Инвентарь и хозяйственные принадлежности</string>
     <string name="a1090">1090 Прочие материалы</string>
@@ -250,9 +250,9 @@
 
     <string name="a5100">5100 СЧЕТА УЧЕТА ДЕНЕЖНЫХ СРЕДСТВ НА РАСЧЕТНОМ СЧЕТЕ</string>
     <string name="a5110">5110 Расчетный счет</string>
-    <string name="a5120">5210 Валютные счета внутри страны</string>
 
     <string name="a5200">5200 СЧЕТА УЧЕТА ДЕНЕЖНЫХ СРЕДСТВ В ИНОСТРАННОЙ ВАЛЮТЕ</string>
+    <string name="a5210">5210 Валютные счета внутри страны</string>
     <string name="a5220">5220 Валютные счета за рубежом</string>
 
     <string name="a5300">5300</string>
@@ -359,7 +359,7 @@
 
     <string name="p7600">7600</string>
 
-    <string name="p7700">7800</string>
+    <string name="p7700">7700</string>
 
     <string name="p7800">7800 СЧЕТА УЧЕТА ДОЛГОСРОЧНЫХ КРЕДИТОВ И ЗАЙМОВ</string>
     <string name="p7810">7810 Долгосрочные банковские кредиты</string>
@@ -394,10 +394,10 @@
     <string name="p8530">8530 Безвозмездно полученное имущество</string>
 
     <string name="p8600">8600 СЧЕТА УЧЕТА ВЫКУПЛЕННЫХ СОБСТВЕННЫХ АКЦИЙ</string>
-    <string name="p8610">610 Выкупленные собственные акции — простые</string>
+    <string name="p8610">8610 Выкупленные собственные акции — простые</string>
     <string name="p8620">8620 Выкупленные собственные акции — привилегированные</string>
 
-    <string name="p8700">700 СЧЕТА УЧЕТА НЕРАСПРЕДЕЛЕННОЙ ПРИБЫЛИ (НЕПОКРЫТОГО УБЫТКА)</string>
+    <string name="p8700">8700 СЧЕТА УЧЕТА НЕРАСПРЕДЕЛЕННОЙ ПРИБЫЛИ (НЕПОКРЫТОГО УБЫТКА)</string>
     <string name="p8710">8710 Нераспределенная прибыль (непокрытый убыток) отчетного; периода</string>
     <string name="p8720">8720 Накопленная прибыль (непокрытый убыток)</string>
 
@@ -415,7 +415,7 @@
 
     <string name="t9000">9000 СЧЕТА УЧЕТА ДОХОДОВ ОТ ОСНОВНОЙ (ОПЕРАЦИОННОЙ) ДЕЯТЕЛЬНОСТИ</string>
     <string name="t9010">9010 Доходы от реализации готовой продукции</string>
-    <string name="t9020">020 Доходы от реализации товаров</string>
+    <string name="t9020">9020 Доходы от реализации товаров</string>
     <string name="t9030">9030 Доходы от выполнения работ и оказания услуг</string>
     <string name="t9040">9040 Возврат проданных товаров</string>
     <string name="t9050">9050 Скидки, предоставленные покупателям и заказчикам</string>
@@ -490,8 +490,7 @@
     <string name="z014">014 Инвентарь и хозяйственные принадлежности в эксплуатации</string>
     <string name="z015">015 Имущество, полученное по договору простого товарищества (совместной деятельности)</string>
     <string name="z016">016 Нематериальные активы, полученные по праву пользования</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="search">search</string>
     <string name="moliya_studiasi">Moliya Studiasi</string>
     <string name="tilni_o_zgartirish">Tilni o\'zgartirish</string>
@@ -500,4 +499,13 @@
     <string name="mobil_ilova_haqida">Mobil ilova haqida</string>
     <string name="bizni_baholang">Bizni baholang</string>
     <string name="boshqa_mahsulotlar">Boshqa mahsulotlar</string>
+    <string name="tilni_tanlang">o\'zingizga mos tilni tanlang</string>
+    <string name="home" translatable="false">Home</string>
+
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="bookmark" translatable="false">Bookmark</string>
+    <string name="settings" translatable="false">Settings</string>
+    <string name="night_mode" translatable="false">Tungi rejim</string>
+    <string name="share" translatable="false">Bo\'lishish</string>
 </resources>

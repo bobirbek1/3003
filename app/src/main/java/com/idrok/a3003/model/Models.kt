@@ -12,15 +12,9 @@ const val ITEM_TYPE = 2
 data class ListItems(
     val body:String = "",
     val type:Int = 0,
-    val listChilds: ArrayList<ListChilds> = arrayListOf()
+    val section:Int = -1
 )
-
-data class ListChilds(
+data class ListPdfName(
     val name:String = "",
-    val elements:Data? = null
-)
-
-data class Data(
-    val title:String = "",
-    val body: String = ""
+    val isBookmark:Boolean = false
 )
