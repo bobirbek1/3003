@@ -6,6 +6,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.github.barteksc.pdfviewer.PDFView;
+import com.github.barteksc.pdfviewer.listener.OnRenderListener;
 import com.itextpdf.kernel.colors.DeviceRgb;
 import com.itextpdf.kernel.geom.Rectangle;
 import com.itextpdf.kernel.pdf.PdfDocument;
@@ -61,9 +62,9 @@ public class DocDopol {
         inPDF = in;
 
         try {
-            if (inPDF != null){
-            initialization();
-            inPDF.reset();
+            if (inPDF != null) {
+                initialization();
+                inPDF.reset();
             }
         } catch (IOException e) {
             Log.e("DocDopol", "exception:" + e.getMessage());
@@ -72,19 +73,21 @@ public class DocDopol {
     }
 
     public void Destroy() throws IOException {
-        if (inPDF != null){
-        stop();
-        list.clear();
-        inPDF.close();}
+        if (inPDF != null) {
+            stop();
+            list.clear();
+            inPDF.close();
+        }
     }
 
     public void stop() {
-if (inPDF != null){
-        if (getSearchState() == SearchState.SearchStart) {
-            pool.shutdownNow();
+        if (inPDF != null) {
+            if (getSearchState() == SearchState.SearchStart) {
+                pool.shutdownNow();
+            }
+            setSearchState(SearchState.SearchCanceled);
+            collection.clear();
         }
-        setSearchState(SearchState.SearchCanceled);
-        collection.clear();}
     }
 
     public void reset() throws IOException {
@@ -93,10 +96,11 @@ if (inPDF != null){
     }
 
     public void open() {
-        if (inPDF != null)
+        if (inPDF != null) {
             pdfView.fromStream(inPDF)
                     .nightMode(true)
                     .load();
+        }
         else
             Toast.makeText(context, "No PDF found", Toast.LENGTH_SHORT).show();
     }
@@ -146,20 +150,20 @@ if (inPDF != null){
 
     private void initialization() throws IOException {
 
-            PdfDocument pdfDocument = new PdfDocument(new PdfReader(inPDF));
+        PdfDocument pdfDocument = new PdfDocument(new PdfReader(inPDF));
 
-            countPdfPage = pdfDocument.getNumberOfPages();
+        countPdfPage = pdfDocument.getNumberOfPages();
 
-            collection = new ArrayMap<>();
+        collection = new ArrayMap<>();
 
-            list = new ArrayList<>();
+        list = new ArrayList<>();
 
-            for (int i = 0; i < countPdfPage; i++) {
-                list.add(new PdfOnlyPage(context, pdfDocument, i));
-            }
-
-            pdfDocument.close();
+        for (int i = 0; i < countPdfPage; i++) {
+            list.add(new PdfOnlyPage(context, pdfDocument, i));
         }
+
+        pdfDocument.close();
+    }
 
     private Runnable getRunnable(final PdfOnlyPage pdfOnlyPage, final String value, final int index) {
         return () -> {

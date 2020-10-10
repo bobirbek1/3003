@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
                     android:gravity="center"
-                    android:paddingBottom="4dp"
+                    android:padding="4dp"
                     android:text="@string/button1"
                     android:textColor="#fff"
                     android:textSize="16sp" />
@@ -117,7 +117,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
                     android:gravity="center"
-                    android:paddingBottom="4dp"
+                    android:padding="4dp"
                     android:text="@string/button2"
                     android:textColor="#fff"
                     android:textSize="16sp" />
@@ -157,7 +157,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
                     android:gravity="center"
-                    android:paddingBottom="4dp"
+                    android:padding="4dp"
                     android:text="@string/button3"
                     android:textColor="#fff"
                     android:textSize="16sp" />
@@ -191,7 +191,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
                     android:gravity="center"
-                    android:paddingBottom="4dp"
+                    android:padding="4dp"
                     android:text="@string/button4"
                     android:textColor="#fff"
                     android:textSize="16sp" />
@@ -231,7 +231,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
                     android:gravity="center"
-                    android:paddingBottom="4dp"
+                    android:padding="4dp"
                     android:text="@string/button5"
                     android:textColor="#fff"
                     android:textSize="16sp" />
@@ -265,7 +265,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
                     android:gravity="center"
-                    android:paddingBottom="4dp"
+                    android:padding="4dp"
                     android:text="@string/button6"
                     android:textColor="#fff"
                     android:textSize="16sp" />

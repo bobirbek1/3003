@@ -6,4 +6,5 @@
 
     <color name="colorBackgroundPage">#e0e0e0</color>
     <color name="colorWhite">#fff</color>
+    <color name="colorGrey">#6d6d6d</color>
 </resources>

@@ -1,6 +1,9 @@
 package com.idrok.a3003.ui.main
 
 import android.content.Context
+import android.content.Intent
+import android.content.res.ColorStateList
+import android.net.Uri
 import android.os.Bundle
 import android.util.DisplayMetrics
 import android.util.Log
@@ -8,7 +11,9 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
+import android.widget.CompoundButton
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -16,22 +21,23 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
-import com.google.android.material.navigation.NavigationView
 import com.idrok.a3003.PREFERENCE_KEY
 import com.idrok.a3003.R
-import com.idrok.a3003.model.ImageSlider
 import com.idrok.a3003.data.LANGUAGE
+import com.idrok.a3003.model.ImageSlider
 import com.idrok.a3003.ui.sliderAdapter.SliderAdapter
 import kotlinx.android.synthetic.main.content_main.view.*
+import kotlinx.android.synthetic.main.drawer_footer.view.*
+import kotlinx.android.synthetic.main.drawer_menu.view.*
 import kotlinx.android.synthetic.main.fragment_main.view.*
 import java.util.*
 import kotlin.math.abs
 
 const val PDFNAME = "pdfName"
-const val IS_BUTTON6 = "isButton6"
+//const val IS_BUTTON6 = "isButton6"
 
-class MainFragment : Fragment(R.layout.fragment_main),
-    NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+class MainFragment : Fragment(R.layout.fragment_main), View.OnClickListener,
+    CompoundButton.OnCheckedChangeListener {
     private lateinit var rootView: View
     private lateinit var viewPager2: ViewPager2
     private lateinit var timer: Timer
@@ -69,12 +75,12 @@ class MainFragment : Fragment(R.layout.fragment_main),
             requireActivity()
         }
 
-        rootView.nav_view.setNavigationItemSelectedListener(this)
-//        rootView.btn_telegram.setOnClickListener(this)
-//        rootView.btn_facebook.setOnClickListener(this)
-//        rootView.btn_instagram.setOnClickListener(this)
-//        rootView.btn_twitter.setOnClickListener(this)
-//        rootView.btn_vk.setOnClickListener(this)
+        rootView.tv_language.setOnClickListener(this)
+        rootView.tv_share.setOnClickListener(this)
+        rootView.tv_grade.setOnClickListener(this)
+        rootView.btn_telegram.setOnClickListener(this)
+        rootView.btn_facebook.setOnClickListener(this)
+        rootView.btn_instagram.setOnClickListener(this)
 
         //1-main button
         rootView.cv_main_1.setOnClickListener {
@@ -109,9 +115,10 @@ class MainFragment : Fragment(R.layout.fragment_main),
         //6-main button
         rootView.cv_main_6.setOnClickListener {
             val bundle = Bundle()
-            bundle.putString(PDFNAME,getPdfName(1))
-            findNavController().navigate(R.id.pdfFragment,bundle)
+            bundle.putString(PDFNAME, getPdfName(1))
+            findNavController().navigate(R.id.pdfFragment, bundle)
         }
+        rootView.night_mode.setOnCheckedChangeListener(this)
     }
 
     private fun getPdfName(i: Int): String {
@@ -151,8 +158,9 @@ class MainFragment : Fragment(R.layout.fragment_main),
                 }
             }
         } else {
-            return if (i == 0){"qonun.ru.pdf"}
-            else{
+            return if (i == 0) {
+                "qonun.ru.pdf"
+            } else {
                 "konseptual.ru.pdf"
             }
         }
@@ -234,33 +242,40 @@ class MainFragment : Fragment(R.layout.fragment_main),
         Log.d("MainFragment", "onDestroyView work")
     }
 
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.nav_language -> {
-                findNavController().navigate(R.id.languageFragment)
-            }
-
-            R.id.nav_share -> {
-            }
-
-            R.id.nav_grade -> {
-            }
-        }
-        return false
-    }
-
     override fun onClick(view: View?) {
         when (view) {
-//            rootView.btn_telegram -> {
-//            }
-//            rootView.btn_facebook -> {
-//            }
-//            rootView.btn_instagram -> {
-//            }
-//            rootView.btn_twitter -> {
-//            }
-//            rootView.btn_vk -> {
-//            }
+            rootView.btn_telegram -> {
+                sendLink("https://t.me/moliya_studiyasi")
+            }
+            rootView.btn_facebook -> {
+                sendLink("https://com.facebook.katana/moliya.studiyasi/")
+            }
+            rootView.btn_instagram -> {
+                sendLink("https://www.instagram.com/moliya_studiyasi/")
+            }
+            rootView.tv_language -> {
+                findNavController().navigate(R.id.languageFragment)
+            }
+            rootView.tv_grade -> {
+            }
+            rootView.tv_share -> {
+            }
+        }
+    }
+
+    private fun sendLink(link: String) {
+        val uri = Uri.parse(link)
+        val intent = Intent(Intent.ACTION_VIEW,uri)
+        startActivity(intent)
+    }
+
+    override fun onCheckedChanged(buttonView: CompoundButton?, isChecked: Boolean) {
+        if (isChecked){
+            rootView.night_mode.thumbTintList = ColorStateList(arrayOf(intArrayOf(0)), intArrayOf(ContextCompat.getColor(requireContext(),R.color.colorGrey)))
+            rootView.night_mode.trackTintList = ColorStateList(arrayOf(intArrayOf(0)), intArrayOf(ContextCompat.getColor(requireContext(),R.color.colorBackgroundPage)))
+        }else {
+            rootView.night_mode.thumbTintList = ColorStateList(arrayOf(intArrayOf(0)), intArrayOf(ContextCompat.getColor(requireContext(),R.color.colorBackgroundPage)))
+            rootView.night_mode.trackTintList = ColorStateList(arrayOf(intArrayOf(0)), intArrayOf(ContextCompat.getColor(requireContext(),R.color.colorGrey)))
         }
     }
 }

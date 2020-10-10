@@ -116,6 +116,7 @@ class DataFragment : Fragment(R.layout.fragment_data) {
     private fun setViews() {
         val toolbar = rootView.toolbar_data
         timer = Timer()
+        rootView.cv_search.visibility = View.GONE
         prefs = requireActivity().getSharedPreferences(PREFERENCE_KEY, Context.MODE_PRIVATE)
         setHasOptionsMenu(true)
         getData = GetData(requireContext())
@@ -141,11 +142,13 @@ class DataFragment : Fragment(R.layout.fragment_data) {
                 docDopol.stop()
             }
             docDopol.search(submitted)
+                rootView.cv_search.visibility = View.VISIBLE
             }
         }
         searchView.setOnCloseListener {
             docDopol.reset()
             docDopol.open()
+            rootView.cv_search.visibility = View.GONE
             searchView.onActionViewCollapsed()
             return@setOnCloseListener true
         }

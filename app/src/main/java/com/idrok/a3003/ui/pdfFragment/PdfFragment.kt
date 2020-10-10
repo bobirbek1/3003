@@ -30,6 +30,7 @@ class PdfFragment : Fragment(R.layout.fragment_pdf_reader) {
     }
 
     private fun setViews() {
+        rootView.cv_search.visibility = View.GONE
         (requireActivity() as AppCompatActivity).setSupportActionBar(rootView.pdf_toolbar)
         rootView.pdf_toolbar.setNavigationOnClickListener {
             requireActivity().onBackPressed()
@@ -49,11 +50,13 @@ class PdfFragment : Fragment(R.layout.fragment_pdf_reader) {
                     docDopol.stop()
                 }
                 docDopol.search(submitted)
+                rootView.cv_search.visibility = View.VISIBLE
             }
         }
         searchView.setOnCloseListener {
             docDopol.reset()
             docDopol.open()
+            rootView.cv_search.visibility = View.GONE
             searchView.onActionViewCollapsed()
             return@setOnCloseListener true
         }

@@ -617,7 +617,7 @@ class GetData(private val context: Context) {
        "9900.uz-Cyrl.pdf"
     )
 
-    fun getPdfNameListRu() = arrayListOf(
+    fun getPdfNameListUz() = arrayListOf(
         "0100.uz.pdf",
         "0200.uz.pdf",
         "0300.uz.pdf",
@@ -717,7 +717,7 @@ class GetData(private val context: Context) {
         "9800.uz.pdf",
         "9900.uz.pdf",
     )
-    fun getPdfNameListUz() = arrayListOf(
+    fun getPdfNameListRu() = arrayListOf(
         "0100.ru.pdf",
         "0200.ru.pdf",
         "0300.ru.pdf",

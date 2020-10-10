@@ -502,4 +502,5 @@
     <string name="bizni_baholang">Bizni baholang</string>
     <string name="boshqa_mahsulotlar">Boshqa mahsulotlar</string>
     <string name="tilni_tanlang">o\'zingizga mos tilni tanlang</string>
+    <string name="app_version">App Name v1.1</string>
 </resources>

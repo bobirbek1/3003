@@ -508,4 +508,9 @@
     <string name="settings" translatable="false">Settings</string>
     <string name="night_mode" translatable="false">Tungi rejim</string>
     <string name="share" translatable="false">Bo\'lishish</string>
+    <string name="social">Bizni kuzatib boring:</string>
+    <string name="app_version">App Name v1.1</string>
+    <string name="website">www.dg.uz</string>
+    <string name="company_name">Digital world</string>
+    <string name="dastur_yaratuvchisi">Dastur yaratuvchisi:</string>
 </resources>

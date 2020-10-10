@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -18,9 +19,9 @@
                 android:id="@+id/pdf_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                app:menu="@menu/pdf_menu"
                 app:navigationIcon="@drawable/ic_left"
                 app:title="@string/button5"
-                app:menu="@menu/pdf_menu"
                 app:titleTextColor="@color/colorWhite" />
         </com.google.android.material.appbar.AppBarLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
@@ -31,5 +32,55 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cl_pdf" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="1/123"
+                android:textColor="@color/colorWhite"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/iv_previous"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:contentDescription="@string/image"
+                android:focusable="true"
+                app:srcCompat="@drawable/ic_left" />
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:clickable="true"
+                android:contentDescription="@string/image"
+                android:focusable="true"
+                app:srcCompat="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
