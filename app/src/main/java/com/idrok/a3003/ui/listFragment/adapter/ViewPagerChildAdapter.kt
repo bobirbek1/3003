@@ -1,5 +1,6 @@
 package com.idrok.a3003.ui.listFragment.adapter
 
+import android.annotation.SuppressLint
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -10,63 +11,49 @@ import android.widget.Filter
 import android.widget.Filterable
 import androidx.recyclerview.widget.RecyclerView
 import com.idrok.a3003.R
-import com.idrok.a3003.model.ITEM_TYPE
-import com.idrok.a3003.model.ListItems
-import com.idrok.a3003.model.TITLE_TYPE
 import kotlinx.android.synthetic.main.rv_list_items.view.*
-import kotlinx.android.synthetic.main.rv_list_items_title.view.*
 import java.util.*
 
 
+@Suppress("UNCHECKED_CAST")
 class ViewPagerChildAdapter(
-    private val callback: ((Int) -> Unit)
-) : RecyclerView.Adapter<RecyclerView.ViewHolder>(), Filterable {
+    private val indicator: Int,
+    private val callback:((String) -> Unit)
+) : RecyclerView.Adapter<ViewPagerChildAdapter.VH>(), Filterable {
 
-    private var listFiltered = arrayListOf<ListItems>()
-    private var list = arrayListOf<ListItems>()
+    private var listFiltered = arrayListOf<String>()
+    private var list = arrayListOf<String>()
     private var lastPosition = -1
 
-    fun setData(list: ArrayList<ListItems>) {
+    fun setData(list: ArrayList<String>) {
         this.list = list
         this.listFiltered = list
         notifyItemChanged(0, listFiltered.size)
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
         Log.d("ListChildAdapter", "enter onCreateViewHolder")
-        when (viewType) {
-            TITLE_TYPE -> {
-                val view = LayoutInflater.from(parent.context)
-                    .inflate(R.layout.rv_list_items_title, parent, false)
-                return VH1(view)
-            }
-            ITEM_TYPE -> {
-                val view = LayoutInflater.from(parent.context)
-                    .inflate(R.layout.rv_list_items, parent, false)
-                return VH2(view)
-            }
-        }
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.rv_list_items, parent, false)
-        return VH2(view)
+        return VH(view)
     }
 
     // RecyclerView elemenlarini bin qilish
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        if (listFiltered[position].type == TITLE_TYPE) {
-            holder as VH1
-            holder.onBind(listFiltered[position].body)
-            setAnimation(holder.itemView, position)
-        } else {
-            holder as VH2
-            //RecyclerViewni elementi bosilganda callback bilan ListChildni ListFragmentChildga otish
-            holder.itemView.setOnClickListener {
-                callback.invoke(listFiltered[position].section)
-            }
-            holder.onBind(listFiltered[position].body)
-            setAnimation(holder.itemView, position)
+    override fun onBindViewHolder(holder: VH, position: Int) {
+//        if (listFiltered[position].type == TITLE_TYPE) {
+//            holder as VH1
+//            holder.onBind(listFiltered[position].body)
+//            setAnimation(holder.itemView, position)
+//        } else {
+//        }
+//        holder as VH
+        //RecyclerViewni elementi bosilganda callback bilan ListChildni ListFragmentChildga otish
+        holder.itemView.setOnClickListener {
+            callback.invoke(listFiltered[position])
         }
+        holder.onBind(listFiltered[position],indicator)
+        setAnimation(holder.itemView, position)
 
     }
 
@@ -91,11 +78,9 @@ class ViewPagerChildAdapter(
     }
 
 
-    override fun getItemCount(): Int = listFiltered.size
 
-    override fun getItemViewType(position: Int): Int {
-        return listFiltered[position].type
-    }
+
+    override fun getItemCount(): Int = listFiltered.size
 
 
     override fun getFilter(): Filter {
@@ -106,9 +91,9 @@ class ViewPagerChildAdapter(
                 listFiltered = if (charString.isEmpty()) {
                     list
                 } else {
-                    val filteredList = arrayListOf<ListItems>()
+                    val filteredList = arrayListOf<String>()
                     for (item in list) {
-                        if (item.body.toLowerCase(Locale.getDefault()).trim().contains(
+                        if (item.toLowerCase(Locale.getDefault()).trim().contains(
                                 charString.toLowerCase(
                                     Locale.getDefault()
                                 ).trim()
@@ -124,10 +109,9 @@ class ViewPagerChildAdapter(
                 filterResults.values = listFiltered
                 return filterResults
             }
-
             override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
                 listFiltered = if (results != null)
-                    results.values as ArrayList<ListItems>
+                    results.values as ArrayList<String>
                 else
                     arrayListOf()
 
@@ -136,16 +120,20 @@ class ViewPagerChildAdapter(
         }
 
     }
+//
+//    class VH1(view: View) : RecyclerView.ViewHolder(view) {
+//        fun onBind(body: String) {
+//            itemView.tv_list_title.text = body
+//        }
+//    }
 
-    class VH1(view: View) : RecyclerView.ViewHolder(view) {
-        fun onBind(body: String) {
-            itemView.tv_list_title.text = body
-        }
-    }
-
-    class VH2(view: View) : RecyclerView.ViewHolder(view) {
-        fun onBind(body: String) {
+    class VH(view: View) : RecyclerView.ViewHolder(view) {
+        @SuppressLint("SetTextI18n")
+        fun onBind(body: String, indicator: Int) {
+            if (indicator == 1)
             itemView.tv_list_items.text = body
+            else
+                itemView.tv_list_items.text = "${adapterPosition+1} $body"
         }
     }
 }

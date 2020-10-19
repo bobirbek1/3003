@@ -55,6 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:text="1/123"
+                android:id="@+id/tv_search"
                 android:textColor="@color/colorWhite"
                 tools:ignore="HardcodedText" />
 

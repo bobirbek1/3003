@@ -1,5 +1,6 @@
 package com.idrok.a3003.ui.dataFragment
 
+
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -9,21 +10,22 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.SearchView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.idrok.a3003.PREFERENCE_KEY
 import com.idrok.a3003.R
-import com.idrok.a3003.data.DocDopol
 import com.idrok.a3003.data.GetData
-import com.idrok.a3003.data.SearchState
-import com.idrok.a3003.data.LANGUAGE
+import com.idrok.a3003.data.readFromText.ReadFromText
 import com.idrok.a3003.ui.bookmark.TITLE
-import com.idrok.a3003.ui.customizeSearch.CustomizeSearch
-import com.idrok.a3003.ui.listFragment.DATA_SECTION
+import com.idrok.a3003.ui.dataFragment.adapter.ViewPagerAdapter
+import com.idrok.a3003.ui.listFragment.DOC_ITEM_POS
 import com.idrok.a3003.utils.toast
 import kotlinx.android.synthetic.main.fragment_data.view.*
+import kotlinx.android.synthetic.main.tab_item.view.*
 import java.util.*
 
 
@@ -34,10 +36,9 @@ class DataFragment : Fragment(R.layout.fragment_data) {
     private lateinit var rootView: View
     private lateinit var getData: GetData
     private lateinit var prefs: SharedPreferences
-    private lateinit var docDopol: DocDopol
+//    private lateinit var docDopol: DocDopol
 
     private var pdfName: String = ""
-    private var section = -1
     private var listBookmarks = arrayListOf<Int>()
     private var listPdfName = arrayListOf<String>()
     private lateinit var timer: Timer
@@ -47,7 +48,6 @@ class DataFragment : Fragment(R.layout.fragment_data) {
         rootView = view
         setViews()
         showAd()
-
     }
 
     private fun showAd() {
@@ -71,36 +71,37 @@ class DataFragment : Fragment(R.layout.fragment_data) {
         }
     }
 
-    private fun getData() {
-        section = requireArguments().getInt(DATA_SECTION, -1)
-        when (prefs.getString(LANGUAGE, "ru")) {
-            "uz" -> {
-                listPdfName = getData.getPdfNameListUz()
-                pdfName = listPdfName[section]
-                if (pdfName.isNotEmpty())
-                    setPdfWithSearch(pdfName)
-                else
-                    requireContext().toast("No PDF document found")
-            }
-            "cyrl" -> {
-                listPdfName = getData.getPdfNameListCyrl()
-                pdfName = listPdfName[section]
-                if (pdfName.isNotEmpty())
-                    setPdfWithSearch(pdfName)
-                else
-                    requireContext().toast("No PDF document found")
-            }
-            "ru" -> {
-                listPdfName = getData.getPdfNameListRu()
-                pdfName = listPdfName[section]
-                if (pdfName.isNotEmpty())
-                    setPdfWithSearch(pdfName)
-                else
-                    requireContext().toast("No PDF document found")
-
-            }
-        }
-        checkBookmarks()
+    private fun getData(): Int {
+        return requireArguments().getInt(DOC_ITEM_POS, 0)
+//        val listData = ReadFromText.getData(position)
+//        section = requireArguments().getInt(DOC_SECTION, -1)
+//        when (prefs.getString(LANGUAGE, "ru")) {
+//            "uz" -> {
+//                listPdfName = getData.getPdfNameListUz()
+//                pdfName = listPdfName[section]
+//                if (pdfName.isNotEmpty())
+//                    setPdfWithSearch(pdfName)
+//                else
+//                    requireContext().toast("No PDF document found")
+//            }
+//            "cyrl" -> {
+//                listPdfName = getData.getPdfNameListCyrl()
+//                pdfName = listPdfName[section]
+//                if (pdfName.isNotEmpty())
+//                    setPdfWithSearch(pdfName)
+//                else
+//                    requireContext().toast("No PDF document found")
+//            }
+//            "ru" -> {
+//                listPdfName = getData.getPdfNameListRu()
+//                pdfName = listPdfName[section]
+//                if (pdfName.isNotEmpty())
+//                    setPdfWithSearch(pdfName)
+//                else
+//                    requireContext().toast("No PDF document found")
+//            }
+//        }
+//        checkBookmarks()
     }
 
     private fun checkBookmarks(): Boolean {
@@ -116,16 +117,87 @@ class DataFragment : Fragment(R.layout.fragment_data) {
     private fun setViews() {
         val toolbar = rootView.toolbar_data
         timer = Timer()
-        rootView.cv_search.visibility = View.GONE
         prefs = requireActivity().getSharedPreferences(PREFERENCE_KEY, Context.MODE_PRIVATE)
         setHasOptionsMenu(true)
         getData = GetData(requireContext())
         (requireActivity() as AppCompatActivity).setSupportActionBar(toolbar)
         setToolbarTitle()
         setOnClicks()
-        getData()
+        setViewPagerWithTab()
         toolbar.setNavigationOnClickListener {
             requireActivity().onBackPressed()
+        }
+    }
+
+    private fun setViewPagerWithTab() {
+        val vp = rootView.vp_data
+        val tabLayout = rootView.tab_data
+        val pos = getData()
+        val adapter = ViewPagerAdapter(getChildCount(pos), pos, this)
+        vp.adapter = adapter
+
+        TabLayoutMediator(tabLayout, vp) { tab, position ->
+            tab.setCustomView(R.layout.tab_item)
+            (tab.customView as View).tv_indicator.text = (position + 1).toString()
+        }.attach()
+        val tab = tabLayout.getTabAt(0)?.customView as View
+        tab.tv_indicator.setTextColor(
+            ContextCompat.getColor(
+                requireContext(),
+                R.color.colorWhite
+            )
+        )
+        tab.cv_data_indicator.setCardBackgroundColor(
+            ContextCompat.getColor(
+                requireContext(),
+                R.color.colorPrimary
+            )
+        )
+        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                val view = tab?.customView as View
+                view.tv_indicator.setTextColor(
+                    ContextCompat.getColor(
+                        requireContext(),
+                        R.color.colorWhite
+                    )
+                )
+                view.cv_data_indicator.setCardBackgroundColor(
+                    ContextCompat.getColor(
+                        requireContext(),
+                        R.color.colorPrimary
+                    )
+                )
+            }
+
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+                val view = tab?.customView as View
+                view.tv_indicator.setTextColor(
+                    ContextCompat.getColor(
+                        requireContext(),
+                        R.color.colorPrimary
+                    )
+                )
+                view.cv_data_indicator.setCardBackgroundColor(
+                    ContextCompat.getColor(
+                        requireContext(),
+                        R.color.colorWhite
+                    )
+                )
+            }
+
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+            }
+
+        })
+    }
+
+    private fun getChildCount(pos: Int): Int {
+        val count = ReadFromText.getDataChild(pos).size
+        return if (count == 0) {
+            1
+        } else {
+            count
         }
     }
 
@@ -135,29 +207,37 @@ class DataFragment : Fragment(R.layout.fragment_data) {
 
     override fun onPrepareOptionsMenu(menu: Menu) {
 
-        val searchView = menu.findItem(R.id.data_search).actionView as SearchView
-        CustomizeSearch(requireActivity()).customizeSearch(menu,searchView) { submitted, _ ->
-            if (!submitted.isNullOrEmpty()){
-            if (docDopol.searchState == SearchState.SearchStart) {
-                docDopol.stop()
-            }
-            docDopol.search(submitted)
-                rootView.cv_search.visibility = View.VISIBLE
-            }
-        }
-        searchView.setOnCloseListener {
-            docDopol.reset()
-            docDopol.open()
-            rootView.cv_search.visibility = View.GONE
-            searchView.onActionViewCollapsed()
-            return@setOnCloseListener true
-        }
+//        val searchView = menu.findItem(R.id.data_search).actionView as SearchView
+//        CustomizeSearch(requireActivity()).customizeSearch(menu, searchView) { submitted, _ ->
+//            if (!submitted.isNullOrEmpty()) {
+//                if (docDopol.searchState == SearchState.SearchStart) {
+//                    docDopol.stop()
+//                }
+//                search(submitted)
+//            }
+//        }
+//        searchView.setOnCloseListener {
+//            docDopol.reset()
+//            docDopol.open()
+//            setNavigateVisibility(false)
+//            searchView.onActionViewCollapsed()
+//            return@setOnCloseListener true
+//        }
         if (checkBookmarks()) {
             menu.findItem(R.id.data_bookmark).setIcon(R.drawable.ic_bookmark_filled)
         } else {
             menu.findItem(R.id.data_bookmark).setIcon(R.drawable.ic_bookmark_border)
         }
     }
+
+//    private fun search(submitted: String) {
+//        if (docDopol.search(submitted)) {
+//            setNavigation()
+//            setNavigateVisibility(true)
+//        } else {
+//            requireActivity().toast("Search bar is empty")
+//        }
+//    }
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -188,12 +268,12 @@ class DataFragment : Fragment(R.layout.fragment_data) {
         }
     }
 
-    private fun setPdfWithSearch(pdfName: String) {
-        val pdfReader = rootView.pdf_data
-        docDopol = DocDopol.getInstance(requireContext(), rootView.pdf_data, pdfName)
-        Log.d("PdfFragment", "setPdf:$pdfReader")
-        docDopol.open()
-    }
+//    private fun setPdfWithSearch(pdfName: String) {
+//        val pdfReader = rootView.pdf_data
+//        docDopol = DocDopol.getInstance(requireContext(), rootView.pdf_data, pdfName)
+//        Log.d("PdfFragment", "setPdf:$pdfReader")
+//        docDopol.open()
+//    }
 
     override fun onPause() {
         super.onPause()
@@ -203,7 +283,7 @@ class DataFragment : Fragment(R.layout.fragment_data) {
     override fun onDestroy() {
         super.onDestroy()
         timer.cancel()
-        docDopol.Destroy()
+//        docDopol.Destroy()
     }
 
     private fun saveBookmarks() {
@@ -222,6 +302,52 @@ class DataFragment : Fragment(R.layout.fragment_data) {
 //        }
 //        rootView.tv_bookmark.setOnClickListener { }
     }
+
+//    private fun setNavigation() {
+//        val pdfNavigation: PdfNavigation = docDopol.pdfNavigation
+//        val index = pdfNavigation.countAllArrayMapChild
+//        val count = pdfNavigation.countArrayMapChild
+//        setTextNavigation(index, count)
+//        if (index == 1) {
+//            val imgNavLeft = rootView.iv_previous
+//            imgNavLeft.isEnabled = false
+//        } else {
+//            val imgNavLeft = rootView.iv_previous
+//            imgNavLeft.isEnabled = true
+//        }
+//        if (index == count) {
+//            val imgNavRight = rootView.iv_next
+//            imgNavRight.isEnabled = false
+//        } else {
+//            val imgNavRight = rootView.iv_next
+//            imgNavRight.isEnabled = true
+//        }
+//    }
+
+//    @SuppressLint("SetTextI18n")
+//    private fun setTextNavigation(index: Int, count: Int) {
+//        rootView.tv_search_count.text = "$index/$count"
+//    }
+
+//    private fun setNavigateVisibility(visibility: Boolean) {
+//        if (visibility) {
+//            rootView.cv_search.visibility = View.VISIBLE
+//            rootView.iv_next.setOnClickListener {
+//                if (docDopol.nextCollection()) {
+//                    setNavigation()
+//                }
+//            }
+//            rootView.iv_previous.setOnClickListener {
+//                if (docDopol.preedCollection()) {
+//                    setNavigation()
+//                }
+//            }
+//        } else {
+//
+//            rootView.cv_search.visibility = View.INVISIBLE
+//        }
+//    }
+
 
 //    private fun getNameFromArguments(): String {
 //        return requireArguments().getString(DATA_NAME, "")

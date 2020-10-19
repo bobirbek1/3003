@@ -6,19 +6,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/colorBackgroundPage">
 
-    <TextView
-        android:layout_width="match_parent"
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/tv_list_title"
-        tools:text="9000 ucheta doxodov ot osnovnoy (Operatsionnoy) deyatelnosti"
-        android:textColor="#000"
-        android:textSize="16sp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:gravity="center"
-        android:textStyle="bold"/>
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

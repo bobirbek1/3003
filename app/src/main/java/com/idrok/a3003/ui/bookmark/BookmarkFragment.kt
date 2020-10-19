@@ -17,7 +17,7 @@ import com.idrok.a3003.R
 import com.idrok.a3003.data.GetData
 import com.idrok.a3003.ui.bookmark.adapter.Adapter
 import com.idrok.a3003.ui.dataFragment.BOOKMARK_LIST
-import com.idrok.a3003.ui.listFragment.DATA_SECTION
+import com.idrok.a3003.ui.listFragment.DOC_SECTION
 import kotlinx.android.synthetic.main.fragment_bookmark.view.*
 
 const val PDF_NAME = "pdf_name"
@@ -56,7 +56,7 @@ class BookmarkFragment : Fragment(R.layout.fragment_bookmark) {
         Log.d("BookmarkFragment", "choosenTitles: $listChoosenTitles")
         val adapter = Adapter(listChoosenTitles) { title ->
             val bundle = Bundle()
-            bundle.putInt(DATA_SECTION, listTitles.binarySearch(title))
+            bundle.putInt(DOC_SECTION, listTitles.binarySearch(title))
             bundle.putString(TITLE, requireContext().getString(R.string.bookmark))
             findNavController().navigate(R.id.dataFragment, bundle)
         }

@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.idrok.a3003.ui.listFragment.ListFragment"
+        android:name="com.idrok.a3003.ui.listFragment.ListDocumentsFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" />
     <fragment
@@ -36,5 +36,10 @@
         android:name="com.idrok.a3003.ui.bookmark.BookmarkFragment"
         android:label="fragment_bookmark"
         tools:layout="@layout/fragment_bookmark" />
+    <fragment
+        android:id="@+id/listDocSecFragment"
+        android:name="com.idrok.a3003.ui.listFragment.ListDocSecFragment"
+        android:label="fragment_list_doc_sec"
+        tools:layout="@layout/fragment_list_doc_sec" />
 
 </navigation>

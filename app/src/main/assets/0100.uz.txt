@@ -1,0 +1,140 @@
+1	Asosiy vositalar ob’yektlarining ichki harakati aks ettirilgan 	0100-0190	0110-0190	Asosiy vositalarning ichki harakati bo‘yicha yukxatlar
+2	Uskuna ijaraga beruvchi tomonidan operativ ijaraga berilgan (ijaraga beruvchidagi yozuv) 	0131	0130	Joriy ijaraga berish bo‘yicha yukxatlar 
+3	Operativ ijaraga berilgan asosiy vositalar ijaraga beruvchiga qaytarilgan (ijaraga beruvchidagi yozuv) 	0130	0131	Joriy ijaradan qaytarish bo‘yicha yukxatlar 
+4	Qurilishi tugallangan va foydalanishga topshirilgan ob’yektlar asosiy vositalar tarkibiga kiritilgan (inventar qiymati bo‘yicha) 	0110-0190	0810	Asosiy vositalarni foydalanishga qabul qilish-topshirish dalolatnomasi, inventar kartochkalar 
+5	Inventar va jihozlarning asosiy vositalar turkumiga o‘tkazilishi aks ettirilgan 	0110-0190	1080	Ichki harakat bo‘yicha yukxatlar 
+6	Asosiy vositalar o‘z bo‘linmalaridan kelib tushgan 	0110-0190	6110	Asosiy vositalarni qabul qilish-topshirish bo‘yicha shartnoma, asosiy vositalarni qabul qilish-topshirish dalolatnomasi 
+7	Asosiy vositalar haqiqiy tannarxi bo‘yicha xarid qilingan (boshlang‘ich qiymati) 	0110-0190	0820	Yetkazib berish shartnomasi, tovar-transport yukxati, hisobvaraq-faktura, asosiy vositalarni qabul qilish-topshirish dalolatnomasi 
+8	Moliyaviy ijara shartnomasi tugagandan so‘ng, moliyaviy ijara shartnomasi bo‘yicha olingan ob’yektlar asosiy vositalar tarkibiga kiritilgan 	0110-0190	0310	Lizing shartnomasi, asosiy vositalarni qabul qilishtopshirish dalolatnomasi 
+9	Xo‘jalik yoki pudrat usuli bilan amalga oshirilgan qurilish natijasida foydalanishga topshirilgan va asosiy vositalar tarkibiga kiritiladigan vaqtinchalik (titul) bino va inshootlarning haqiqiy tannarxi aks ettirilgan 	0110-0190	0810	Loyiha-smeta hujjatlari, qurilishi tugallangan ob’yektlarni qabul qilish dalolatnomasi, asosiy vositalarni qabul qilish-topshirish dalolatnomasi 
+10	Ustav kapitaliga ta’sischilar tomonidan ulush (paylar) sifatida berilgan asosiy vositalar balansga hisobga kiritilgan 	0110-0190	4610	Ta’sis shartnomasi, asosiy vositalarni qabul qilishtopshirish dalolatnomasi 
+11	Davlat hokimiyati organi tomonidan biriktirilgan mulk tarkibidagi asosiy vositalar unitar korxona tomonidan olingan 	0110-0190	8330	Ustav, ta’sis shartnomasi, qabul qilishtopshirish dalolatnomasi 
+12	Aksiyalar haqini to‘lash hisobiga kelib tushgan asosiy vositalar balansga hisobga kiritilgan 	0110-0190	4610	Qimmatli qog‘ozlarga obuna, asosiy vositalarni qabul qilish-topshirish dalolatnomasi 
+13	Asosiy vositalar tekinga kelib tushgan 	0110-0190	8530	Hadya shartnomasi, asosiy vositalar tekinga berilishi to‘g‘risida buyruq yoki qaror, asosiy vositalarni qabul qilishtopshirish dalolatnomasi 
+14	Asosiy vositalar tarkibiga ishchi va mahsuldor hayvonlar kiritilgan 	0170	0840	Ishchi va mahsuldor hayvonlarni asosiy vositalar tarkibiga kiritish to‘g‘risida dalolatnoma 
+15	Qurib bitkazish, qo‘shimcha jihozlash, zamonaviylashtirish, rekonstruksiyalash hamda boshqa ajratiladigan va ajralmas sifat jihatdan yaxshilanishi munosabati bilan asosiy vositalarning boshlang‘ich qiymati qo‘shimcha baholangan 	0110-0190	0890	Loyiha-smeta hujjatlari, asosiy vositalarni qabul qilish-topshirish dalolatnomasi 
+16	Yerni obodonlashtirish bilan bog‘liq xarajatlar asosiy vositalar tarkibiga kiritilgan 	0111	0810	Loyiha-smeta hujjatlari, asosiy vositalarni qabul qilish-topshirish dalolatnomasi 
+17	Ijaraga beruvchi tomonidan operativ ijara bo‘yicha ijaraga olingan asosiy vositalar yuzasidan ijaraga oluvchi tomonidan amalga oshirilgan kapital qo‘yilmalar summasiga asosiy vositalar qo‘shimcha baholangan 	0111-0190	8530	Operativ ijara shartnomasi, asosiy vositalarni qabul qilish-topshirish dalolatnomasi 
+18	Xususiylashtirilgan korxonaning asosiy vositalar ob’yektlari hisobga qabul qilingan 	0110-0190	8310-8330	Oldi-sotdi shartnomasi, hisobvaraq-faktura, TTYu, asosiy vositalarni qabul qilish-topshirish dalolatnomasi 
+19	Qayta baholash natijasida asosiy vositalarning qo‘shimcha baholanishi summalari aks ettirilgan 	0110-0190	8510	Qayta baholashni o‘tkazish to‘g‘risida buyruq, qo‘shimcha baholash hisob-kitobi 
+20	Inventarlash jarayonida aniqlangan, hisobga olinmagan asosiy vositalar ob’yektlari bozor narxlarida kirim qilingan 	0110-0190	9390	Asosiy vositalarni inventarlash natijalari bo‘yicha solishtirma qaydnoma, inventarlash natijalarini hisobga olish qaydnomasi, rahbar buyrug‘i 
+21	Maqsadli foydalanish uchun olingan asosiy vositalar kirim qilingan 	0110-0190	8810-8890	Asosiy vositalarni maqsadli foydalanish uchun berish shartnomasi, asosiy vositalarni qabul qilish-topshirish dalolatnomasi 
+22	Kapital qo‘yilmalarni asosiy vositalar tarkibiga o‘tkazish paytida moliyaviy ijara shartnomasiga muvofiq olingan asosiy vositalar yaxshilanishi uchun qilingan sarf-xarajatlar summasi aks ettirilgan 	0112	0860	Moliyaviy ijara shartnomasi, asosiy vositalar moliyaviy ijaraga olinganligi to‘g‘risida dalolatnoma 
+23	Moliyaviy ijara shartnomasi bo‘yicha olingan asosiy vositalar obodonlashtirilganligini qayta baholash natijasida ularning balans qiymati oshirilgan (qo‘shimcha baholangan) 	0112	8510	Moliyaviy ijara shartnomasi, qayta baholashni o‘tkazish to‘g‘risidagi rahbar buyrug‘i 
+24	To‘liq eskirganligi va keyinchalik foydalanish uchun yaroqsizligi sababli tugatilishi munosabati bilan asosiy vositalarning chiqib ketishi aks ettirilgan: 			Asosiy vositalarning chiqib ketishi to‘g‘risida dalolatnoma (AV-4 shakli), tugatilishi munosabati bilan asosiy vositalarning chiqib ketishi to‘g‘risida komissiya qarori 
+	a) asosiy vositalarning boshlang‘ich qiymatiga 	9210	0110-0190	
+	b) asosiy vositalarning jamlangan eskirish summasiga 	0210-0290	9210	
+	v) tugatish bilan bog‘liq xarajatlar summasiga 	9210	6710, 6520, 6990 va b. 	
+	g) olingan uzellar, detallar, materiallar, rangli va qimmatbaho metallar qiymatiga 	1010-1090	9210	
+	d) asosiy vositalarning ob’yekti qayta baholanganligi natijalari (saldo) summasiga 	8510	9210	
+	ye) asosiy vositalar tugatilganligi natijasida olingan foyda summasiga 	9210	9310	
+	j) asosiy vositalar tugatilganligi natijasida olingan zarar summasiga 	9430	9210	
+25	Sotilishi munosabati bilan asosiy vositalarning chiqib ketishi aks ettirilgan: 			Asosiy vositalarning chiqib ketishi to‘g‘risida dalolatnoma (AV-4 shakli), tugatilishi munosabati bilan asosiy vositalarning chiqib ketishi to‘g‘risida komissiya qarori 
+	a) asosiy vositalarning sotilgan qiymati summasiga 	4010	9210	
+	b) QQS hisoblanganda 	9210	6410	
+	v) asosiy vositalarning boshlang‘ich qiymatiga 	9210	0110-0190	
+	g) asosiy vositalar bo‘yicha jamlangan eskirish hisobdan chiqarilganda 	0210-0290	9210	
+	d) sotish bo‘yicha xarajatlar summasiga 	9210	6710, 6520, 6990 va b. 	
+	ye) asosiy vositalar ob’yekti qayta baholanganligi natijalari (saldo) summasiga 	8510	9210	
+	j) asosiy vositalar sotilishidan olingan foyda summasiga 	9210	9310	
+	z) asosiy vositalar sotilishidan olingan zarar summasiga 	9430	9210	
+26	Bepul (tekinga) berilishi (hadya qilish shartnomasi bo‘yicha) natijasida asosiy vositalarning chiqib ketishi aks ettirilgan: 			Asosiy vositalarni tekinga berish (hadya qilish) to‘g‘risida shartnoma, tekinga berish to‘g‘risida komissiya qarori, tekinga berish munosabati bilan asosiy vositalarning chiqib ketishi to‘g‘risida dalolatnoma (AV-4 shakli) 
+	a) asosiy vositalarning boshlang‘ich qiymatiga 	9210	0110-0190	
+	b) asosiy vositalarning jamlangan eskirishi summasiga 	0210-0290	9210	
+	v) QQS hisoblanganda 	9210	6410	
+	g) asosiy vositalar ob’yekti qayta baholanganligi natijalari (saldo) summasiga 	8510	9210	
+	d) asosiy vositalar tekinga berilganligidan olingan foyda summasiga 	9210	9310	
+	ye) asosiy vositalar tekinga berilganligidan olingan zarar summasiga 	9430	9210	
+27	Ustav kapitaliga ulush sifatida berilganligi munosabati bilan asosiy vositalarning chiqib ketishi aks ettirilgan: 			Ta’sis shartnomasi, ustav, ta’sischilarning kelishilganligi to‘g‘risidagi bayonnoma, asosiy vositalarning chiqib ketishi to‘g‘risida dalolatnoma (AV-4 shakli) 
+	a) ta’sis shartnomasi bilan nazarda tutilgan qiymatga 	0610-0690	9210	
+	b) asosiy vositalarning boshlang‘ich qiymatiga 	9210	0110-0190	
+	v) asosiy vositalarning jamlangan eskirishi summasiga 	0210-0290	9210	
+	g) ustav kapitaliga ulush sifatida berilgan xarajatlar summasiga 	9210	6710, 6520	
+	d) asosiy vositalarning ob’yekti qayta baholanganligi natijalari (saldo) summasiga 	8510	9210	
+	ye) asosiy vositalar ustav kapitaliga ulush sifatida berilganligidan olingan foyda summasiga 	9210	9310	
+	j) asosiy vositalar ustav kapitaliga ulush sifatida berilganligidan olingan zarar summasiga 	9430	9210	
+28	Moliyaviy ijara shartnomasi bo‘yicha berishda asosiy vositalarning chiqib ketishi aks ettirilgan: 			Moliyaviy ijara shartnomasi, asosiy vositalarni moliyaviy ijaraga berish dalolatnomasi 
+	a) moliyaviy ijara shartnomasi bilan nazarda tutilgan qiymatga: 			
+	- joriy qismi 	4810	9210	
+	- uzoq muddatli qismi 	0920	9210	
+	b) asosiy vositalarning boshlang‘ich qiymatiga 	9210	0110-0190	
+	v) asosiy vositalarning jamg‘arilgan eskirish summasiga 	0210-0290	9210	
+	g) asosiy vositalarni moliyaviy ijara shartnomasiga ko‘ra berish bilan bog‘liq xarajatlar summasiga 	9210	6710, 6520, 6990	
+	d) asosiy vositalar ob’yekti qayta baholanganligi natijalari (saldo) summasiga 	8510	9210	
+	ye) moliyaviy ijara shartnomasi bo‘yicha asosiy vositalarni berishdan kechiktirilgan daromadlar summasiga: 			
+	- joriy qismi 	9210	6230	
+	- uzoq muddatli qismi 	9210	7230	
+	j) moliyaviy ijara shartnomasi bo‘yicha asosiy vositalarni berishdan kechiktirilgan xarajatlar summasiga: 			
+	- joriy qismi 	3290	9210	
+	- uzoq muddatli qismi 	0990	9210	
+	z) moliyaviy ijara shartnomasi bo‘yicha asosiy vositalarni berishdan kechiktirilgan daromadlar summasini daromadga hisobdan chiqarishda 	6230	9550	
+	i) moliyaviy ijara shartnomasi bo‘yicha asosiy vositalarni berishdan kechiktirilgan xarajatlar summasini zararlarga hisobdan chiqarishda 	9430	3290	
+29	Kamomadi va buzilishi munosabati bilan asosiy vositalarning chiqib ketishi aks ettirilgan: 			Asosiy vositalarni inventarlash natijalarining solishtirma qaydnomasi, inventarlash natijalarini hisobga oluvchi qaydnoma, rahbar buyrug‘i 
+	a) yetishmayotgan asosiy vositalar ob’yektining boshlang‘ich (tiklash) qiymatiga 	9210	0110-0190	
+	b) yetishmayotgan asosiy vositalar ob’yekti bo‘yicha jamlangan amortizasiya summasiga 	0210-0290	9210	
+	v) yetishmayotgan asosiy vositalarning ob’yekti qayta baholanganligi natijalari (saldo) summasiga 	8510	9210	
+	g) yetishmayotgan asosiy vositalar ob’yektining chiqib ketishidan kamomad summasiga 	5910	9210	
+	d) moddiy javobgar shaxs aybdor deb topilgan taqdirda, baholash natijasida ob’yektning bozor qiymati (undirib olish summasi) yetishmayotgan ob’yekt chiqib ketishidan zarar summasidan yuqori bo‘lganda: 			
+	- aybdor shaxs hisobidan yetishmayotgan asosiy vositalar ob’yekti chiqib ketishidan kamomad summasiga 	4730	5910	
+	- aybdor shaxs yoki moddiy javobgar shaxsdan undirilishi lozim bo‘lgan yetishmayotgan asosiy vosita ob’yektining bozor qiymati va yetishmayotgan asosiy vositaning chiqib ketishidan ko‘rilgan kamomad summasi o‘rtasidagi farqqa 	4730	9310	
+	ye) moddiy javobgar shaxs aybdor deb topilgan taqdirda, baholash natijasida ob’yektning bozor qiymati (undirib olish summasi) yetishmayotgan asosiy vositalar ob’yekti chiqib ketishidan zarar summasidan past bo‘lganda: 			
+	- asosiy vositalar yetishmayotgan ob’yektining chiqib ketishidan kamomad summasiga 	4730	5910	
+	- aybdor yoki moddiy javobgar shaxslardan undirib olinishi lozim bo‘lgan summa va asosiy vositalar yetishmayotgan ob’yektining chiqib ketishidan kamomad summasi o‘rtasidagi farqqa 	9430	5910	
+	j) kamomadning aniq aybdorlari aniqlanmaganda yoki moddiy javobgar shaxslardan undirish imkoniyati bo‘lmaganda: 			
+	- boshlang‘ich (tiklash) qiymatiga 	9210	0110-0190	
+	- hisoblangan amortizasiya summasiga 	0210-0290	9210	
+	z) asosiy vositalarning yetishmayotgan ob’yekti qayta baholanganligi natijalari (saldo) summasiga 	8510	9210	
+	- asosiy vositalar yetishmayotgan ob’yektining chiqib ketishidan zarar summasiga 	9430	9210	
+30	Ta’sischilar tarkibidan chiqayotgan ishtirokchiga asosiy vositani berish munosabati bilan uning chiqib ketishi aks ettirilgan: 			Korxona ustaviga kiritilgan o‘zgartirishlar, ta’sischilarning kelishuv bayonnomasi, muassis ta’sischilar tarkibidan chiqarilganda asosiy vosita berilishi munosabati bilan uning chiqib ketishi to‘g‘risidagi dalolatnoma 
+	a) chiqib ketayotgan ishtirokchilardan ularning ulushiga oid qarz bo‘yicha hisob-kitob uchun beriladigan asosiy vositalar qiymati summasiga 	6620	9210	
+	b) QQS hisoblanganda 	9210	6410	
+	v) asosiy vositalarning boshlang‘ich qiymati hisobdan chiqarilganda 	9210	0110-0190	
+	g) asosiy vositalarning hisoblangan eskirishi hisobdan chiqarilganda 	0210-0290	9210	
+	d) asosiy vositalar ob’yekti qayta baholanganligi natijalari (saldo) summasiga 	8510	9210	
+	ye) chiqib ketayotgan ishtirokchilarning ulushi bo‘yicha qarzni hisob-kitob qilishda ularga berilayotgan asosiy vositalar qiymatining qarzdan ortishidan farq ular tomonidan qoplanganda 	4890	9210	
+	j) ishtirokchi ta’sischilar tarkibidan chiqarilishida u bilan asosiy vositalar bilan hisob-kitob qilishda asosiy vositalar chiqib ketishidan olingan foyda summasiga 	9210	9310	
+	z) ta’sischilar tarkibidan chiqarilishida asosiy vositalar bilan hisob-kitob qilishda asosiy vositalar chiqib ketishidan olingan zarar summasiga 	9430	9210	
+31	Hayvonlar asosiy podadan yaroqsiz deb topilganligi munosabati bilan asosiy vositalardan chiqib ketishi aks ettirilgan: 			Hayvonlar va parranda chiqib ketishi to‘g‘risidagi bayonnoma 
+	a) mahsuldor hayvonlar yaroqsiz deb topilganligi munosabati bilan boshlang‘ich qiymat hisobdan chiqarilganda 	9210	0170	
+	b) boquvga o‘tkazilgan hayvonlarning qiymatiga 	1120	9210	
+	v) baholangan qiymati boshlang‘ich qiymatdan ortiq bo‘lgan taqdirda, boshlang‘ich qiymat bilan baholangan qiymat o‘rtasidagi farq summasiga 	9210	9310	
+	g) baholangan qiymati boshlang‘ich qiymatdan past bo‘lgan taqdirda, boshlang‘ich qiymat bilan baholangan qiymat o‘rtasidagi farq summasiga 	9430	9210	
+32	Asosiy vositalar tabiiy ofatlar natijasida tugatilishi munosabati bilan balansdan chiqarilishi aks ettirilgan: 			Asosiy vositalarning chiqib ketishi to‘g‘risida dalolatnoma (AV-4 shakli), asosiy vositalarning tabiiy ofatlar natijasida tugatilishi munosabati bilan chiqib ketishi to‘g‘risida komissiyaning qarori 
+	a) asosiy vositalarning boshlang‘ich qiymatini hisobdan chiqarishda 	9210	0110-0190	
+	b) asosiy vositalarning hisoblangan eskirishini hisobdan chiqarishda 	0210-0290	9210	
+	v) tugatish bo‘yicha xarajatlar summasiga 	9210	6710, 6520	
+	g) olingan uzellar, detallar, materiallar, rangli va qimmatbaho metallar qiymatiga 	1010-1090	9210	
+	d) asosiy vositalar ob’yekti qayta baholanganligi natijalari (saldo) summasiga 	8510	9210	
+	ye) tabiiy ofatdan ko‘rilgan zarar summasiga 	9720	9210	
+33	Asosiy vositalarning qiymati arzonlashtirilgan:			Qayta baholashni o‘tkazish to‘g‘risidagi buyruq, qiymat arzonlashtirilishi hisob-kitobi 
+	a) oldingi davrlarda ob’yektning qo‘shimcha baholangan summasi doirasida boshlang‘ich qiymati kamaytirilgan summaga 	8510	0110-0190	
+	b) eskirishni tuzatish summasiga 	0210-0290	8510	
+	v) ob’yektning bahosi arzonlashtirilgan summaning uning qo‘shimcha baholangan summasidan ortiq bo‘lgan summaga 	9430	0110-0190	
+34	Moliyaviy ijara shartnomasi bo‘yicha olingan asosiy vositalar obodonlashtirilishi qayta baholandi; ularning balans qiymati kamaytirilgan: 			Moliyaviy ijara shartnomasi, qayta baholashni o‘tkazish to‘g‘risida rahbar buyrug‘i 
+	a) qo‘shimcha baholashga 	0112	8510	
+	b) oldingi qo‘shimcha baholash chegarasida qiymatni arzonlashtirish summasiga 	8510	0112	
+	v) oldingi qo‘shimcha baholash summasidan yuqori bo‘lgan qiymatni arzonlashtirish summasiga 	9430	0112	
+35	Moliyaviy ijaraga olingan asosiy vositalarning lizingga beruvchiga qaytarilishida chiqib ketishi: 			Moliyaviy ijara shartnomasi, rahbar buyrug‘i 
+	a) moliyaviy ijara shartnomasi bo‘yicha olingan asosiy vositalar obodonlashtirilganligining boshlang‘ich (tiklash) qiymatiga 	9210	0112	
+	b) jamlangan eskirish summasiga 	9210	0212	
+	v) moliyaviy ijara shartnomasi bo‘yicha olingan va lizingga beruvchi tomonidan qoplanadigan asosiy vositalarning obodonlashtirilganligi qiymati summasiga 	4890	9210	
+	g) moliyaviy ijara shartnomasi bo‘yicha olingan asosiy vositalar ob’yekti qo‘shimcha baholanganligi natijalari (saldo) summasiga 	8510	9210	
+	d) ijara to‘lovlari jadvali (tartibi) bo‘yicha qoplanmagan asosiy qarz qoldig‘i summasiga 	6950, 7910	9210	
+	ye) moliyaviy ijara shartnomasi bo‘yicha ijaraga oluvchi tomonidan mazkur shartnomaga ko‘ra amalga oshiriladigan asosiy vositalarni qaytarish bo‘yicha (demontaj qilish, tashish va h.k.) xarajatlar summasiga 	9210	1000, 6710, 6500 va b. 	
+	j) moliyaviy ijara shartnomasi bo‘yicha olingan asosiy vositalar qaytarilishidan olingan foyda summasiga 	9210	9310	
+	z) moliyaviy ijara shartnomasi bo‘yicha olingan asosiy vositalar qaytarilishidan ko‘rilgan zarar summasiga 	9430	9210	
+36	Noto‘g‘ri hisobga olingan aktivlar inventar va xo‘jalik jihozlari tarkibidan asosiy vositalar tarkibiga o‘tkazilgan (belgilangan cheklov doirasida) 	0110-0190	1080	O‘tkazish dalolatnomasi, inventar kartochkasi 
+37	Asosiy vositalar tarkibiga noto‘g‘ri hisobga olingan inventar va xo‘jalik jihozlari o‘tkazilgan: 			O‘tkazish dalolatnomasi, asosiy vositalarni tugatish dalolatnomasi 
+	a) boshlang‘ich qiymatiga 	9210	0100	
+	b) jamlangan eskirish summasiga 	0200	9210	
+	v) qoldiq qiymatiga 	1080	9210	
+	g) inventar va xo‘jalik jihozlari bo‘yicha xarajatlar summasiga 	Xarajat- larni hisobga oluvchi schyotlar 	1080	
+38	Tabiiy ofat natijasida yo‘qotilgan asosiy vositalarning chiqib ketishi aks ettirilgan: 			Tabiiy ofat natijasida yo‘qotilgan asosiy vositalarni tugatish dalolatnomasi 
+	a) boshlang‘ich qiymatiga 	9210	0100	
+	b) jamlangan eskirish summasiga 	0200	9210	
+	v) qoldiq qiymatiga 	9710	9210	
+39	Oldingi yildagi mahsulot tannarxiga yanglish kiritilgan asosiy vositalarni xarid qilish bilan bog‘liq ayrim xarajatlar hisobiga joriy yilda asosiy vositalar qo‘shimcha baholangan 	0100	Xarajat- larni hisobga oluvchi schyotlar 	Buxgalteriyaning hisob-kitob ma’lumotnomasi 
+40	Bosh tashkilotdan alohida ajralib chiqqan bo‘linma tomonidan asosiy vositalar boshlang‘ich qiymati bo‘yicha balansga olingan 	0100	6110-6120	Qabul qilish topshirish shartnomasi, dalolatnoma
+41	Ijaraga beruvchiga qaytarilgan asosiy vositalar qiymati ijaraga oluvchi tomonidan amalga oshirilgan tugallangan kapital qo‘yilmalar summasiga oshirilgan 	0110-0190	0820	Yukxat, asosiy vositalarni qabul qilishtopshirish dalolatnomasi 
+42	Tekinga olingan hayvonlarni keltirish bilan bog‘liq xarajatlar aks ettirilgan 	0840	6990	Yukxat, qabul qilishtopshirish dalolatnomasi 
+43	Shu’ba (qaram) tashkilot tomonidan qaytarilgan asosiy vositalar bosh tashkilot balansiga hisobga kiritilgan 	0100	4110-4120	Asosiy vositalarni qabul qilishtopshirish dalolatnomasi
